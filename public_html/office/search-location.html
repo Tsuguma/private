@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+<title>郵便局一覧（現在地から探す）</title>
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<link rel="icon" href="">
+<link rel="stylesheet" href="/assets/css/vendor.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<!--#include virtual="/assets/inc/header.html"-->
+
+<ol class="l-breadcrumb">
+  <li class="l-breadcrumb__item"><a href="/">トップ</a></li>
+  <li class="l-breadcrumb__item">現在地から探す</li>
+</ol>
+
+<div class="l-page-header">
+  <div class="l-page-header__inner">
+    <h2 class="l-page-header__title">現在地から探す</h2>
+  </div>
+  <div class="l-page-header__help">
+    <div class="p-tooltip__wrap">
+      <a class="c-button-info p-tooltip__button js-tooltip-trigger" data-tooltip="tooltip"><img src="/assets/img/icon/icon_info.svg" alt=""></a>
+      <div class="p-tooltip js-tooltip-content" id="tooltip">
+        <p class="p-tooltip__title">混雑レベルについて</p>
+        <ul>
+          <li class="p-explanation__list">
+            <div class="c-status-badge-square--01">
+              <span class="c-status-badge__icon"></span>
+              <span class="c-status-badge__type">空き</span>
+            </div>
+            <div class="p-explanation__content">
+              <p class="p-explanation__name">説明タイトル</p>
+              <p class="p-explanation__text">説明がここに入ります。説明がここに入ります。説明がここに入ります。</p>
+            </div>
+          </li>
+          <li class="p-explanation__list">
+            <div class="c-status-badge-square--02">
+              <span class="c-status-badge__icon"></span>
+              <span class="c-status-badge__type">やや混雑</span>
+            </div>
+            <div class="p-explanation__content">
+              <p class="p-explanation__name">説明タイトル</p>
+              <p class="p-explanation__text">説明がここに入ります。説明がここに入ります。説明がここに入ります。</p>
+            </div>
+          </li>
+          <li class="p-explanation__list">
+            <div class="c-status-badge-square--03">
+              <span class="c-status-badge__icon"></span>
+              <span class="c-status-badge__type">混雑</span>
+            </div>
+            <div class="p-explanation__content">
+              <p class="p-explanation__name">説明タイトル</p>
+              <p class="p-explanation__text">説明がここに入ります。説明がここに入ります。説明がここに入ります。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="l-container">
+  <div class="l-content--01">
+    <ul class="p-tab__button-group">
+      <li class="p-tab__button js-tab-trigger is-active" data-tab="map">地図</li>
+      <li class="p-tab__button js-tab-trigger" data-tab="archive">一覧</li>
+    </ul>
+
+    <div class="l-inner">
+      <div class="p-search-office">
+        <div class="p-result p-search-office__result p-tab__content js-tab-content" id="archive">
+          <div class="p-result__header">
+            <p class="p-result__text">全 6 件</p>
+            <button class="c-sort p-result__sort">並べ替え</button>
+          </div>
+          <div class="p-result__body">
+            <ul class="p-panel-list">
+              <li class="p-panel">
+                <a href="/office/detail.html">
+                  <figure class="p-panel__img"><img src="/assets/img/office/img_01.png" alt="東京中央局"></figure>
+                  <div class="p-panel__content">
+                    <p class="p-panel__title">東京中央局</p>
+                    <p class="p-panel__text">〒100-8799<br>東京都中央区銀座<br>8-20-26 </p>
+                  </div>
+                  <div class="c-status-badge--02 p-panel__status">
+                    <span class="c-status-badge__text">全体的に</span>
+                    <span class="c-status-badge__icon"></span>
+                    <span class="c-status-badge__type">やや混雑</span>
+                  </div>
+                </a>
+              </li>
+              <li class="p-panel">
+                <a href="/office/detail.html">
+                  <figure class="p-panel__img"><img src="/assets/img/office/img_02.png" alt="銀座三郵便局"></figure>
+                  <div class="p-panel__content">
+                    <p class="p-panel__title">銀座三郵便局</p>
+                    <p class="p-panel__text">〒100-8799<br>東京都中央区銀座<br>8-20-26 </p>
+                  </div>
+                  <div class="c-status-badge--03 p-panel__status">
+                    <span class="c-status-badge__text">全体的に</span>
+                    <span class="c-status-badge__icon"></span>
+                    <span class="c-status-badge__type">混雑</span>
+                  </div>
+                </a>
+              </li>
+              <li class="p-panel">
+                <a href="/office/detail.html">
+                  <figure class="p-panel__img"><img src="/assets/img/office/img_01.png" alt="東京中央局"></figure>
+                  <div class="p-panel__content">
+                    <p class="p-panel__title">東京中央局</p>
+                    <p class="p-panel__text">〒100-8799<br>東京都中央区銀座<br>8-20-26 </p>
+                  </div>
+                  <div class="c-status-badge--01 p-panel__status">
+                    <span class="c-status-badge__text">全体的に</span>
+                    <span class="c-status-badge__icon"></span>
+                    <span class="c-status-badge__type">空き</span>
+                  </div>
+                </a>
+              </li>
+              <li class="p-panel">
+                <a href="/office/detail.html">
+                  <figure class="p-panel__img"><img src="/assets/img/office/img_02.png" alt="銀座三郵便局"></figure>
+                  <div class="p-panel__content">
+                    <p class="p-panel__title">銀座三郵便局</p>
+                    <p class="p-panel__text">〒100-8799<br>東京都中央区銀座<br>8-20-26 </p>
+                  </div>
+                  <div class="c-status-badge--02 p-panel__status">
+                    <span class="c-status-badge__text">全体的に</span>
+                    <span class="c-status-badge__icon"></span>
+                    <span class="c-status-badge__type">やや混雑</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <div class="p-pagination u-pc">
+              <a href="javascript:void(0)" class="p-pagination__prev"></a>
+              <span class="p-pagination__number is-active">1</span>
+              <a href="javascript:void(0)" class="p-pagination__number">2</a>
+              <a href="javascript:void(0)" class="p-pagination__next"></a>
+            </div>
+
+            <div class="p-button-group--center u-sp">
+              <a href="javascript:void(0)" class="c-button-more">
+                もっと見る
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-map p-search-office__map p-tab__content js-tab-content is-active">
+          <div class="p-map__inner" id="map">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2757932282448!2d139.7672349152585!3d35.67021058019682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be0ec8e06a7%3A0x439e18095d59472d!2z6YqA5bqn5LiJ6YO15L6_5bGA!5e0!3m2!1sja!2sjp!4v1607049017513!5m2!1sja!2sjp"></iframe> -->
+          </div>
+          <img src="/assets/img/map.png" width="1120" height="1130" alt="dummy" class="p-map__img">
+          <div class="p-map__control">
+            <button class="p-map__control-item"><img src="/assets/img/icon/iocn_plus.svg" alt="拡大" ></button>
+            <button class="p-map__control-item"><img src="/assets/img/icon/icon_minus.svg" alt="縮小"></button>
+          </div>
+          <button class="p-map__button">元の位置へ</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div><!-- .l-container -->
+
+<ul class="p-sns">
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_facebook.png" width="76" height="77" alt="facebook"></a></li>
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_twitter.png" width="74" height="74" alt="Twitter"></a></li>
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_mail.png" width="74" height="74" alt="mail"></a></li>
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_line.png" width="74" height="74" alt="LINE"></a></li>
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_instagram.png" width="74" height="74" alt="Instagram"></a></li>
+</ul>
+
+<!--#include virtual="/assets/inc/footer.html" -->
+
+<script src="/assets/js/vendor.js"></script>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* TOP
+--------------------------------------------------------------*/
+
+.p-top-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  @include pc-screen {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.p-top-heading {
+  position: relative;
+
+  &:nth-child(n+2) {
+    margin-top: 40px;
+
+    @include pc-screen {
+      margin-top: 60px;
+    }
+  }
+}
+
+.p-top-tooltip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.p-top-news-link {
+  text-align: center;
+  margin-top: 25px;
+
+  @include sp-screen {
+    margin-bottom: 50px;
+  }
+}
+
+.p-top-kv-area {
+  position: relative;
+}
+
+.p-top-kv-link {
+  display: block;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  background: #fad400;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.33;
+  padding-top: 15px;
+  position: absolute;
+  right: 4.26%;
+  bottom: -16px;
+  z-index: 2;
+
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+
+  @include pc-screen {
+    width: 150px;
+    height: 150px;
+    font-size: 1.6rem;
+    line-height: 1.43;
+    padding-top: 28px;
+    right: 50%;
+    margin-right: -500px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: #000;
+    background-size: 6px 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include pc-screen {
+      width: 27px;
+      height: 27px;
+      bottom: 18px;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    background: url('/assets/img/icon/icon_arrow_02.svg') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+
+    @include pc-screen {
+      bottom: 26px;
+    }
+  }
+}

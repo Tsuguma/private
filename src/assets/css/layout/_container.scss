@@ -1,0 +1,44 @@
+/* Container
+--------------------------------------------------------------*/
+.l-container {
+  @include sp-screen {
+    overflow-x: hidden;
+  }
+}
+
+.l-content {
+  &--01 {
+    width: 100%;
+    background: #fff;
+
+    &:last-child {
+      margin-bottom: 30px;
+
+      @include pc-screen {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &--02 {
+    width: 100%;
+    background: #f7f7f7;
+
+    &:last-child {
+      border-bottom: 1px solid #d6d6d6;
+    }
+  }
+}
+
+.l-inner {
+  padding-left: 4.26%;
+  padding-right: 4.26%;
+
+  @include pc-screen {
+    padding-left: 0;
+    padding-right: 0;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

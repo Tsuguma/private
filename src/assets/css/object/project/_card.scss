@@ -1,0 +1,76 @@
+/* Card
+--------------------------------------------------------------*/
+.p-card-list {
+  @include sp-screen {
+    margin-left: calc(4.26vw - 8px);
+  }
+
+  @include pc-screen {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.p-card {
+  @include pc-screen {
+    margin: 0 33px 0 0;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  > a {
+    background: #fff;
+    display: block;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+    width: 40.53vw;
+
+    @include sp-screen {
+      margin: 0 8px;
+    }
+
+    @include pc-screen {
+      width: 226px;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: $font_color;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: bold;
+    width: 93.42%;
+    margin: 0 auto;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    @include pc-screen {
+      font-size: 1.5rem;
+      height: 64px;
+    }
+  }
+
+  &__status {
+    width: 93.42%;
+    margin: 0 auto;
+  }
+}

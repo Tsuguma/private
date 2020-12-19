@@ -1,0 +1,143 @@
+/* Ticket
+--------------------------------------------------------------*/
+.p-ticket {
+  border: 1px solid #d6d6d6;
+  padding: 5.86666vw 4.26666vw 4.53333vw;
+  border-radius: 6px;
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+
+  &__time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 1.3333vw;
+
+    @include pc-screen {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__text {
+    color: $font_color;
+    text-align: center;
+    margin-bottom: 2.13333vw;
+
+    @include pc-screen {
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__number {
+    text-align: center;
+
+    @include pc-screen {
+      font-size: 1.6rem;
+    }
+
+    > span {
+      font-size: 5.2rem;
+      font-weight: bold;
+      color: $accent_color;
+      margin-right: 1vw;
+
+      @include pc-screen {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.p-ticket-complete {
+  width: 53.3333vw;
+  border-radius: 16px;
+
+  @include pc-screen {
+    width: 200px;
+    padding: 15px 50px 30px;
+  }
+}
+
+.p-ticket-now {
+  background: #ededed;
+  border-radius: 6px;
+  padding: 3.46666vw 0;
+
+  &__time {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    margin-bottom: 4vw;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 50%;
+    text-align: center;
+
+    &:first-child {
+      border-right: 1px solid #d6d6d6;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 2vw;
+  }
+
+  &__number {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    >span {
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin: 0 0.2em;
+    }
+
+  }
+
+  &__call {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $accent_color;
+    text-align: center;
+  }
+}
+
+.p-ticket-qr {
+  margin-right: auto;
+  margin-left: auto;
+  width: 24.8vw;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.p-ticket-button-area {
+  background: $accent_color;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+
+  &.is-stop {
+    position: absolute;
+  }
+}
+
+.p-ticket-button-area-wrap {
+  position: relative;
+}

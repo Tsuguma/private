@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+<title></title>
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<link rel="icon" href="">
+<link rel="stylesheet" href="/assets/css/vendor.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<!--#include virtual="/assets/inc/header.html"-->
+<div class="l-container">
+
+<div class="l-content--01">
+  <p>content--01<br>width: 100%;<br>color: #fff;</p>
+
+  <div class="l-inner">
+    <p>inner<br></p>
+  </div>
+</div>
+
+<div class="l-content--02">
+  <p>content--02<br>width: 100%;<br>color: #f7f7f7;</p>
+
+  <div class="l-inner">
+    <p>inner<br></p>
+  </div>
+</div>
+
+<ol class="l-breadcrumb">
+  <li class="l-breadcrumb__item"><a href="#">トップ</a></li>
+  <li class="l-breadcrumb__item">現在地から探す</li>
+</ol>
+
+
+<div class="l-page-header--detail">
+  <div class="l-page-header__inner">
+    <h2 class="l-page-header__title">銀座三郵便局</h2>
+    <p class="l-page-header__text">東京都千代田区三番町7-14</p>
+  </div>
+
+  <div class="p-badge-group">
+    <span class="c-badge--post p-badge-group__item">郵便</span>
+    <span class="c-badge--saving p-badge-group__item">貯金</span>
+    <span class="c-badge--insurance p-badge-group__item">保険</span>
+    <span class="c-badge--atm p-badge-group__item">ATM</span>
+    <span class="c-badge--yuyu p-badge-group__item">ゆう<br>ゆう</span>
+    <span class="c-badge--cashless p-badge-group__item">キャッシュレス<br>決済可</span>
+    <span class="c-badge--parking p-badge-group__item">駐車場あり</span>
+  </div>
+
+  <a href="/" class="l-page-header__home"><img src="/assets/img/icon/icon_home.svg" alt="HOME"></a>
+  <a href="#" class="l-page-header__menu"><img src="/assets/img/icon/icon_menu.svg" alt="メニュー"></a>
+</div>
+
+<div class="l-page-header">
+  <div class="l-page-header__inner">
+    <h2 class="l-page-header__title">中央区</h2>
+  </div>
+  <div class="l-page-header__help"><!-- helpのツールチップ入れる --></div>
+</div>
+
+<div class="l-page-header">
+  <div class="l-page-header__inner">
+    <h2 class="l-page-header__title">整理券発行</h2>
+  </div>
+  <a href="#" class="l-page-header__prev"><img src="/assets/img/icon/icon_arrow_03.svg" alt="前へ"></a>
+</div>
+
+<div class="p-tab">
+  <ul class="p-tab__button-group">
+    <li class="p-tab__button js-tab-trigger is-active" data-tab="content1">地図</li>
+    <li class="p-tab__button js-tab-trigger" data-tab="content2">一覧</li>
+  </ul>
+  <div class="p-tab__content js-tab-content is-active" id="content1">
+    content1
+  </div>
+  <div class="p-tab__content js-tab-content" id="content2">
+    content2
+  </div>
+</div>
+
+<div class="p-slide--center">
+  <div class="p-slide__control">
+    <p class="p-slide__control-item--prev js-slide-detail-prev"><span>ATM</span></p>
+    <p class="p-slide__control-current js-slide-detail-current">郵便窓口<span>営業時間  8:30〜19:00</span></p>
+    <p class="p-slide__control-item--next js-slide-detail-next"><span>貯金・保険窓口</span></p>
+  </div>
+
+  <div class="js-slide-detail" data-slide-graph="today" data-slide-type="current">
+    <div>
+      <div class="p-status-detail js-slide-detail-item" data-slide-name="郵便窓口" data-slide-time="8:30〜19:00">
+        <div class="c-status-label--02 p-status-detail__label">
+          <span class="c-status__text">14:15 現在</span>
+          <div class="c-status-label__inner">
+            <span class="c-status-label__icon"></span>
+            <span class="c-status-label__type">やや混雑</span>
+          </div>
+        </div>
+        <div class="p-status-detail__body">
+          <div class="p-status-detail__img">
+            <figure><img src="/assets/img/office/img_post.png" alt="郵便窓口"></figure>
+          </div>
+          <div class="p-status-detail__graph">
+            <div class="p-status-detail__graph-change js-slide-graph-change is-show-today"></div>
+            <figure class="c-graph p-status-detail__graph--today">
+              <figcaption class="c-graph__caption">今日の混雑状況</figcaption>
+              <img src="/assets/img/office/graph_02_today.png" alt="混雑予測グラフ（日）">
+            </figure>
+            <figure class="c-graph p-status-detail__graph--week">
+              <figcaption class="c-graph__caption">今週の混雑状況</figcaption>
+              <img src="/assets/img/office/graph_02_week.png" alt="混雑予測グラフ（週）">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="p-status-detail js-slide-detail-item" data-slide-name="貯金・保険窓口" data-slide-time="9:00〜16:00">
+        <div class="c-status-label--01 p-status-detail__label">
+          <span class="c-status__text">14:15 現在</span>
+          <div class="c-status-label__inner">
+            <span class="c-status-label__icon"></span>
+            <span class="c-status-label__type">空き</span>
+          </div>
+        </div>
+        <div class="p-status-detail__body">
+          <div class="p-status-detail__img">
+            <figure><img src="/assets/img/office/img_post.png" alt="郵便窓口"></figure>
+          </div>
+          <div class="p-status-detail__graph">
+            <div class="p-status-detail__graph-change js-slide-graph-change is-show-today"></div>
+            <figure class="c-graph p-status-detail__graph--today">
+              <figcaption class="c-graph__caption">今日の混雑状況</figcaption>
+              <img src="/assets/img/office/graph_01_today.png" alt="混雑予測グラフ（日）">
+            </figure>
+            <figure class="c-graph p-status-detail__graph--week">
+              <figcaption class="c-graph__caption">今週の混雑状況</figcaption>
+              <img src="/assets/img/office/graph_01_week.png" alt="混雑予測グラフ（週）">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="p-status-detail js-slide-detail-item" data-slide-name="ATM" data-slide-time="7:00〜23:00">
+        <div class="c-status-label--03 p-status-detail__label">
+          <span class="c-status__text">14:15 現在</span>
+          <div class="c-status-label__inner">
+            <span class="c-status-label__icon"></span>
+            <span class="c-status-label__type">混雑</span>
+          </div>
+        </div>
+        <div class="p-status-detail__body">
+          <div class="p-status-detail__img">
+            <figure><img src="/assets/img/office/img_post.png" alt="郵便窓口"></figure>
+          </div>
+          <div class="p-status-detail__graph">
+            <div class="p-status-detail__graph-change js-slide-graph-change is-show-today"></div>
+            <figure class="c-graph p-status-detail__graph--today">
+              <figcaption class="c-graph__caption">今日の混雑状況</figcaption>
+              <img src="/assets/img/office/graph_03_today.png" alt="混雑予測グラフ（日）">
+            </figure>
+            <figure class="c-graph p-status-detail__graph--week">
+              <figcaption class="c-graph__caption">今週の混雑状況</figcaption>
+              <img src="/assets/img/office/graph_03_week.png" alt="混雑予測グラフ（週）">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-status-detail__img-change">
+  <a href="#" class="js-slide-img-change is-active" data-slide-type-target="current">現在</a>
+  <a href="#" class="js-slide-img-change" data-slide-type-target="forecast">予測</a>
+</div>
+
+<div style="width: 300px;">
+  <div class="p-map">
+    <div class="p-map__inner" id="map">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2757932282448!2d139.7672349152585!3d35.67021058019682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be0ec8e06a7%3A0x439e18095d59472d!2z6YqA5bqn5LiJ6YO15L6_5bGA!5e0!3m2!1sja!2sjp!4v1607049017513!5m2!1sja!2sjp"></iframe> -->
+    </div>
+    <img src="/assets/img/map.png" alt="dummy" class="p-map__img">
+    <div class="p-map__control">
+      <button class="p-map__control-item"><img src="/assets/img/icon/iocn_plus.svg" alt="拡大"></button>
+      <button class="p-map__control-item"><img src="/assets/img/icon/icon_minus.svg" alt="縮小"></button>
+    </div>
+    <button class="p-map__button">元の位置へ</button>
+  </div>
+</div>
+
+<a class="js-modal-trigger" data-modal="aaa-modal">おすとモーダルがでます</a>
+<div id="aaa-modal" class="js-modal-content">
+  <p>モーダルの設定方法</p>
+  <p>①トリガー側に .js-modal-trigger を付与します</p>
+  <p>②トリガー側に data-modal を設定します（重複不可）</p>
+  <p>③コンテンツ側に .js-modal-content を付与します</p>
+  <p>④コンテンツ側に ②で設定した値をidとして付与します</p>
+  <p>※ コンテンツ内のレイアウトは各モジュールで行ってください</p>
+</div>
+
+<ol class="p-progress">
+  <li class="p-progress__item is-complete">
+    <p class="p-progress__number"><span>1</span></p>
+    <p class="p-progress__text">窓口選択</p>
+  </li>
+  <li class="p-progress__item is-active">
+    <p class="p-progress__number"><span>2</span></p>
+    <p class="p-progress__text">通知方法選択</p>
+  </li>
+  <li class="p-progress__item">
+    <p class="p-progress__number"><span>3</span></p>
+    <p class="p-progress__text">通知先の入力</p>
+  </li>
+  <li class="p-progress__item">
+    <p class="p-progress__number"><span>4</span></p>
+    <p class="p-progress__text">整理券発行</p>
+  </li>
+</ol>
+<div class="p-step">
+  <h3 class="p-step__title">
+    <span class="p-step__title-number">STEP<span>1</span></span>
+    <span class="p-step__title-text">窓口をお選びください。</span>
+  </h3>
+  <ul class="p-select-window">
+    <li class="p-select-window__item">
+      <input type="radio" name="window" id="post" class="p-select-window__input" checked>
+      <label for="post" class="p-select-window__label">
+        <span class="p-select-window__icon"></span>
+        <span class="p-select-window__text">郵便窓口</span>
+        <span class="p-select-window__wait">
+          <span class="p-select-window__wait-item--people">
+            <span class="p-select-window__wait-text">待ち人数</span>
+            <span class="p-select-window__wait-number"><span>12</span>人</span>
+          </span>
+          <span class="p-select-window__wait-item--time">
+            <span class="p-select-window__wait-text">待ち時間</span>
+            <span class="p-select-window__wait-number">約<span>20</span>分</span>
+          </span>
+        </span>
+      </label>
+    </li>
+    <li class="p-select-window__item">
+      <input type="radio" name="window" id="saving" class="p-select-window__input">
+      <label for="saving" class="p-select-window__label">
+        <span class="p-select-window__icon"></span>
+        <span class="p-select-window__text">貯金窓口</span>
+        <span class="p-select-window__wait">
+          <span class="p-select-window__wait-item--people">
+            <span class="p-select-window__wait-text">待ち人数</span>
+            <span class="p-select-window__wait-number"><span>12</span>人</span>
+          </span>
+          <span class="p-select-window__wait-item--time">
+            <span class="p-select-window__wait-text">待ち時間</span>
+            <span class="p-select-window__wait-number">約<span>20</span>分</span>
+          </span>
+        </span>
+      </label>
+    </li>
+    <li class="p-select-window__item">
+      <input type="radio" name="window" id="insurance" class="p-select-window__input">
+      <label for="insurance" class="p-select-window__label">
+        <span class="p-select-window__icon"></span>
+        <span class="p-select-window__text">保険窓口</span>
+        <span class="p-select-window__wait">
+          <span class="p-select-window__wait-item--people">
+            <span class="p-select-window__wait-text">待ち人数</span>
+            <span class="p-select-window__wait-number"><span>3</span>人</span>
+          </span>
+          <span class="p-select-window__wait-item--time">
+            <span class="p-select-window__wait-text">待ち時間</span>
+            <span class="p-select-window__wait-number">約<span>10</span>分</span>
+          </span>
+        </span>
+      </label>
+    </li>
+  </ul>
+</div>
+<div class="p-step">
+  <h3 class="p-step__title">
+    <span class="p-step__title-number">STEP<span>2</span></span>
+    <span class="p-step__title-text">窓口をお選びください。</span>
+  </h3>
+  <p class="p-step__text">下から通知方法を選んでください。<br>通知先入力画面が表示されますので、通知先を入力して整理券発行ボタンを押してください。</p>
+  <ul class="p-select-notification">
+    <li class="p-select-notification__item js-modal-trigger" data-modal="sms">
+      <img src="/assets/img/button/button_sms.png" alt="SMS">
+      <p class="p-select-notification__text">SMS</p>
+    </li>
+    <li class="p-select-notification__item js-modal-trigger" data-modal="mail">
+      <img src="/assets/img/button/button_mail.png" alt="メール">
+      <p class="p-select-notification__text">メール</p>
+    </li>
+    <li class="p-select-notification__item js-modal-trigger" data-modal="line">
+      <img src="/assets/img/button/button_line.png" alt="LINE">
+      <p class="p-select-notification__text">LINE</p>
+    </li>
+    <li class="p-select-notification__item js-modal-trigger" data-modal="id">
+      <img src="/assets/img/button/button_id.png" alt="ゆうびんID">
+      <p class="p-select-notification__text">ゆうびんID</p>
+    </li>
+  </ul>
+</div>
+
+<div class="js-modal-content" id="sms">
+  <div class="p-step__modal">
+    <form action="" class="p-step__form js-form">
+      <ol class="p-progress">
+        <li class="p-progress__item is-complete">
+          <p class="p-progress__number"><span>1</span></p>
+          <p class="p-progress__text">窓口選択</p>
+        </li>
+        <li class="p-progress__item is-complete">
+          <p class="p-progress__number"><span>2</span></p>
+          <p class="p-progress__text">通知方法選択</p>
+        </li>
+        <li class="p-progress__item is-active js-form-linked">
+          <p class="p-progress__number"><span>3</span></p>
+          <p class="p-progress__text">通知先の入力</p>
+        </li>
+        <li class="p-progress__item">
+          <p class="p-progress__number"><span>4</span></p>
+          <p class="p-progress__text">整理券発行</p>
+        </li>
+      </ol>
+      <h3 class="p-step__title">
+        <span class="p-step__title-number">STEP<span>3</span></span>
+      </h3>
+      <div class="p-step__form-text-area">
+        <p class="p-step__form-icon--sms"><img src="/assets/img/icon/icon_phone.png" alt=""></p>
+        <p class="p-step__form-text">SMSで通知を送りますので<br>電話番号をご入力ください</p>
+      </div>
+
+      <p class="p-step__form-input"><input type="number" placeholder="08012345678" class="c-input js-form-item"></p>
+      <p class="p-step__form-submit"><button class="c-button-ticket is-disabled js-form-submit">整理券発行</button></p>
+    </form>
+  </div>
+</div>
+
+<div class="js-modal-content" id="mail">
+  <div class="p-step__modal">
+    <form action="" class="p-step__form js-form">
+      <ol class="p-progress">
+        <li class="p-progress__item is-complete">
+          <p class="p-progress__number"><span>1</span></p>
+          <p class="p-progress__text">窓口選択</p>
+        </li>
+        <li class="p-progress__item is-complete">
+          <p class="p-progress__number"><span>2</span></p>
+          <p class="p-progress__text">通知方法選択</p>
+        </li>
+        <li class="p-progress__item is-active js-form-linked">
+          <p class="p-progress__number"><span>3</span></p>
+          <p class="p-progress__text">通知先の入力</p>
+        </li>
+        <li class="p-progress__item">
+          <p class="p-progress__number"><span>4</span></p>
+          <p class="p-progress__text">整理券発行</p>
+        </li>
+      </ol>
+      <h3 class="p-step__title">
+        <span class="p-step__title-number">STEP<span>3</span></span>
+      </h3>
+      <div class="p-step__form-text-area">
+        <p class="p-step__form-icon--mail"><img src="/assets/img/icon/icon_mail_02.png" alt=""></p>
+        <p class="p-step__form-text">メールで通知を送りますので<br>メールアドレスをご入力ください</p>
+      </div>
+
+      <p class="p-step__form-input"><input type="email" placeholder="example@example.com" class="c-input js-form-irem"></p>
+      <p class="p-step__form-submit"><button class="c-button-ticket is-disabled js-form-submit">整理券発行</button></p>
+    </form>
+  </div>
+</div>
+
+<div class="js-modal-content" id="id">
+  <div class="p-step__modal">
+    <form action="" class="p-step__form js-form">
+      <ol class="p-progress">
+        <li class="p-progress__item is-complete">
+          <p class="p-progress__number"><span>1</span></p>
+          <p class="p-progress__text">窓口選択</p>
+        </li>
+        <li class="p-progress__item is-complete">
+          <p class="p-progress__number"><span>2</span></p>
+          <p class="p-progress__text">通知方法選択</p>
+        </li>
+        <li class="p-progress__item is-active js-form-linked">
+          <p class="p-progress__number"><span>3</span></p>
+          <p class="p-progress__text">通知先の入力</p>
+        </li>
+        <li class="p-progress__item">
+          <p class="p-progress__number"><span>4</span></p>
+          <p class="p-progress__text">整理券発行</p>
+        </li>
+      </ol>
+      <h3 class="p-step__title">
+        <span class="p-step__title-number">STEP<span>3</span></span>
+      </h3>
+      <div class="p-step__form-text-area">
+        <p class="p-step__form-icon--mail"><img src="/assets/img/icon/icon_id.png" alt=""></p>
+        <p class="p-step__form-text">ゆうびんＩＤで通知を送りますので<br>メールアドレスをご入力ください</p>
+      </div>
+
+      <div class="p-step__form-input-col">
+        <div class="p-step__form-input-group">
+          <p class="c-input-label">ゆうびんＩＤ（メールアドレス）</p>
+          <input type="email" placeholder="example@example.com" class="c-input js-form-item">
+        </div>
+        <div class="p-step__form-input-group">
+          <p class="c-input-label">パスワード</p>
+          <input type="email" placeholder="example@example.com" class="c-input js-form-item">
+        </div>
+      </div>
+      <p class="p-step__form-submit"><button class="c-button-ticket is-disabled js-form-submit">ログインして整理券発行</button></p>
+    </form>
+
+    <div class="p-step__signup">
+      <p class="p-step__signup-text">ゆうびんＩＤをお持ちでない方</p>
+      <a href="#" class="p-step__signup-button">新規会員登録</a>
+    </div>
+  </div>
+</div>
+
+<input type="number" placeholder="08012345678" class="c-input">
+
+<p class="c-input-label">ゆうびんＩＤ（メールアドレス）</p>
+<input type="email" placeholder="example@example.com" class="c-input">
+
+<p class="c-input-label">パスワード</p>
+<input type="email" placeholder="example@example.com" class="c-input">
+
+<div class="c-select">
+  <select name="" id="">
+    <option>中央区</option>
+    <option>並べ替え項目</option>
+    <option>並べ替え項目</option>
+    <option>並べ替え項目</option>
+    <option>並べ替え項目</option>
+    <option>並べ替え項目</option>
+    <option>並べ替え項目</option>
+    <option>並べ替え項目</option>
+  </select>
+</div>
+
+<div class="p-top-kv-area">
+  <div class="p-kv">
+    <img src="/assets/img/top/img_kv_sp.png" class="c-img p-kv__img js-img-switch">
+    <div class="p-kv__inner">
+      <h2 class="p-kv__title">郵便局の混雑状況確認サービス</h2>
+      <p class="p-kv__lead">現在の郵便局の混雑状況をリアルタイムで<br class="u-sp">ご確認いただけます。<br>また、窓口に並ぶことなく、<br class="u-sp">WEB上から順番待ち予約もできます。</p>
+    </div>
+  </div>
+
+  <a href="#" class="p-top-kv-link">WEBで<br>お手続きできる<br>サービス一覧</a>
+</div>
+
+<h2 class="c-heading">現在混雑している郵便局</h2>
+
+<ul class="p-panel-list--col">
+  <li class="p-panel">
+    <a href="">
+      <figure class="p-panel__img"><img src="/assets/img/office/img_01.png" alt="東京中央局"></figure>
+      <div class="p-panel__content">
+        <p class="p-panel__title">東京中央局</p>
+        <p class="p-panel__text">〒100-8799<br>東京都中央区銀座<br>8-20-26 </p>
+      </div>
+      <div class="c-status-badge--01 p-panel__status">
+        <span class="c-status-badge__text">全体的に</span>
+        <span class="c-status-badge__icon"></span>
+        <span class="c-status-badge__type">空き</span>
+      </div>
+    </a>
+  </li>
+  <li class="p-panel">
+    <a href="">
+      <figure class="p-panel__img"><img src="/assets/img/office/img_01.png" alt="東京中央局"></figure>
+      <div class="p-panel__content">
+        <p class="p-panel__title">東京中央局</p>
+        <p class="p-panel__text">〒100-8799<br>東京都中央区銀座<br>8-20-26 </p>
+      </div>
+      <div class="c-status-badge--01 p-panel__status">
+        <span class="c-status-badge__text">全体的に</span>
+        <span class="c-status-badge__icon"></span>
+        <span class="c-status-badge__type">空き</span>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<div class="p-result">
+  <div class="p-result__header">
+    <p class="p-result__text">全 38 件</p>
+    <button class="c-sort p-result__sort">並べ替え</button>
+  </div>
+  <div class="p-result__body">
+    <ul class="p-panel-list">
+      <li class="p-panel">
+        <a href="">
+          <figure class="p-panel__img"><img src="/assets/img/office/img_01.png" alt="東京中央局"></figure>
+          <div class="p-panel__content">
+            <p class="p-panel__title">東京中央局</p>
+            <p class="p-panel__text">〒100-8799<br>東京都中央区銀座<br>8-20-26 </p>
+          </div>
+          <div class="c-status-badge--01 p-panel__status">
+            <span class="c-status-badge__text">全体的に</span>
+            <span class="c-status-badge__icon"></span>
+            <span class="c-status-badge__type">空き</span>
+          </div>
+        </a>
+      </li>
+      <li class="p-panel">
+        <a href="">
+          <figure class="p-panel__img"><img src="/assets/img/office/img_01.png" alt="東京中央局"></figure>
+          <div class="p-panel__content">
+            <p class="p-panel__title">東京中央局</p>
+            <p class="p-panel__text">〒100-8799<br>東京都中央区銀座<br>8-20-26 </p>
+          </div>
+          <div class="c-status-badge--01 p-panel__status">
+            <span class="c-status-badge__text">全体的に</span>
+            <span class="c-status-badge__icon"></span>
+            <span class="c-status-badge__type">空き</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<ul class="p-card-list p-slide js-slide-card">
+  <li class="p-card">
+    <a href="#">
+      <figure class="p-card__img"><img src="/assets/img/office/img_01.png" alt="銀座三郵便局"></figure>
+      <p class="p-card__title">銀座三郵便局</p>
+      <div class="c-status--01 p-card__status">
+        <span class="c-status__text">全体的に</span>
+        <div class="c-status__inner">
+          <span class="c-status__icon"></span>
+          <span class="c-status__type">空き</span>
+        </div>
+      </div>
+    </a>
+  </li>
+  <li class="p-card">
+    <a href="#">
+      <figure class="p-card__img"><img src="/assets/img/office/img_01.png" alt="銀座三郵便局"></figure>
+      <p class="p-card__title">銀座三郵便局</p>
+      <div class="c-status--01 p-card__status">
+        <span class="c-status__text">全体的に</span>
+        <div class="c-status__inner">
+          <span class="c-status__icon"></span>
+          <span class="c-status__type">空き</span>
+        </div>
+      </div>
+    </a>
+  </li>
+  <li class="p-card">
+    <a href="#">
+      <figure class="p-card__img"><img src="/assets/img/office/img_01.png" alt="銀座三郵便局"></figure>
+      <p class="p-card__title">銀座三郵便局</p>
+      <div class="c-status--01 p-card__status">
+        <span class="c-status__text">全体的に</span>
+        <div class="c-status__inner">
+          <span class="c-status__icon"></span>
+          <span class="c-status__type">空き</span>
+        </div>
+      </div>
+    </a>
+  </li>
+  <li class="p-card">
+    <a href="#">
+      <figure class="p-card__img"><img src="/assets/img/office/img_01.png" alt="銀座三郵便局"></figure>
+      <p class="p-card__title">銀座三郵便局</p>
+      <div class="c-status--01 p-card__status">
+        <span class="c-status__text">全体的に</span>
+        <div class="c-status__inner">
+          <span class="c-status__icon"></span>
+          <span class="c-status__type">空き</span>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<div class="c-status--01">
+  <span class="c-status__text">全体的に</span>
+  <div class="c-status__inner">
+    <span class="c-status__icon"></span>
+    <span class="c-status__type">空き</span>
+  </div>
+</div>
+
+<div class="c-status--02">
+  <span>全体的に</span>
+  <div class="c-status__inner">
+    <span class="c-status__icon"></span>
+    <span class="c-status__type">やや混雑</span>
+  </div>
+</div>
+
+<div class="c-status--03">
+  <span>全体的に</span>
+  <div class="c-status__inner">
+    <span class="c-status__icon"></span>
+    <span class="c-status__type">混雑</span>
+  </div>
+</div>
+
+<div class="c-status-badge--01">
+  <span class="c-status-badge__text">全体的に</span>
+  <span class="c-status-badge__icon"></span>
+  <span class="c-status-badge__type">空き</span>
+</div>
+
+<div class="c-status-badge--02">
+  <span class="c-status-badge__text">全体的に</span>
+  <span class="c-status-badge__icon"></span>
+  <span class="c-status-badge__type">やや混雑</span>
+</div>
+
+<div class="c-status-badge--03">
+  <span class="c-status-badge__text">全体的に</span>
+  <span class="c-status-badge__icon"></span>
+  <span class="c-status-badge__type">混雑</span>
+</div>
+
+<div class="c-status-label--01">
+  <span class="c-status__text">14:15 現在</span>
+  <div class="c-status-label__inner">
+    <span class="c-status-label__icon"></span>
+    <span class="c-status-label__type">空き</span>
+  </div>
+</div>
+
+<div class="c-status-label--02">
+  <span>14:15 現在</span>
+  <div class="c-status-label__inner">
+    <span class="c-status-label__icon"></span>
+    <span class="c-status-label__type">やや混雑</span>
+  </div>
+</div>
+
+<div class="c-status-label--03">
+  <span>14:15 現在</span>
+  <div class="c-status-label__inner">
+    <span class="c-status-label__icon"></span>
+    <span class="c-status-label__type">混雑</span>
+  </div>
+</div>
+
+
+<!-- Link -->
+<a href="" class="c-link">テキストリンク</a><br>
+<a href="" class="c-link--arrow">テキストリンク（矢印つき）</a>
+
+<!-- Badge 単体 -->
+<span class="c-badge--post">郵便</span>
+
+<!-- Badge グループ（Badge複数） -->
+<div class="p-badge-group">
+  <span class="c-badge--post p-badge-group__item">郵便</span>
+  <span class="c-badge--saving p-badge-group__item">貯金</span>
+  <span class="c-badge--insurance p-badge-group__item">保険</span>
+  <span class="c-badge--atm p-badge-group__item">ATM</span>
+  <span class="c-badge--yuyu p-badge-group__item">ゆう<br>ゆう</span>
+  <span class="c-badge--cashless p-badge-group__item">キャッシュレス<br>決済可</span>
+  <span class="c-badge--parking p-badge-group__item">駐車場あり</span>
+</div>
+
+<!-- Badge グループ（Badge + テキスト） -->
+<div class="p-badge-group">
+  <span class="c-badge--post p-badge-group__item">郵便</span>
+  <span class="p-badge-group__text">郵便窓口</span>
+</div>
+
+<table class="c-table p-service-table">
+  <thead>
+    <tr>
+      <th>取り扱いサービス</th>
+      <th>平日</th>
+      <th>土曜日</th>
+      <th>日曜日・休日</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="p-service-table__item">
+        <div class="p-badge-group">
+          <span class="c-badge--post p-badge-group__item">郵便</span>
+          <span class="p-badge-group__text">郵便窓口</span>
+        </div>
+      </td>
+      <td>8:30〜19:00</td>
+      <td>9:00〜17:00</td>
+      <td>9:00〜12:30</td>
+    </tr>
+    <tr>
+      <td class="p-service-table__item">
+        <div class="p-badge-group">
+          <span class="c-badge--saving p-badge-group__item">貯金</span>
+          <span class="p-badge-group__text">貯金窓口</span>
+        </div>
+      </td>
+      <td>9:00〜16:00</td>
+      <td>お取り扱いしません</td>
+      <td>お取り扱いしません</td>
+    </tr>
+    <tr>
+      <td class="p-service-table__item">
+        <div class="p-badge-group">
+          <span class="c-badge--insurance p-badge-group__item">保険</span>
+          <span class="p-badge-group__text">保険窓口</span>
+        </div>
+      </td>
+      <td>9:00〜16:00</td>
+      <td>お取り扱いしません</td>
+      <td>お取り扱いしません</td>
+    </tr>
+    <tr>
+      <td class="p-service-table__item">
+        <div class="p-badge-group">
+          <span class="c-badge--atm p-badge-group__item">ATM</span>
+          <span class="p-badge-group__text">ATM</span>
+        </div>
+      </td>
+      <td>7:00〜23:00</td>
+      <td>8:00〜21:00</td>
+      <td>8:00〜21:00</td>
+    </tr>
+    <tr>
+      <td class="p-service-table__item">
+        <div class="p-badge-group">
+          <span class="c-badge--yuyu p-badge-group__item">ゆう<br>ゆう</span>
+          <span class="p-badge-group__text">ゆうゆう窓口</span>
+        </div>
+      </td>
+      <td>7:00〜19:00</td>
+      <td>7:00〜18:00</td>
+      <td>9:00〜18:00</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="p-pagination">
+  <a href="#" class="p-pagination__prev"></a>
+  <span class="p-pagination__number is-active">1</span>
+  <a href="#" class="p-pagination__number">2</a>
+  <a href="#" class="p-pagination__next"></a>
+</div>
+
+<div style="padding: 20px">
+  <ul class="c-list-news">
+    <li class="c-list-news__item">
+      <a href="#" class="c-list-news__link">
+        <span class="c-list-news__date">2020/10/10</span>
+        <p class="c-list-news__text">○○局で混雑の可視化ができるようになりました！</p>
+      </a>
+    </li>
+    <li class="c-list-news__item">
+      <a href="#" class="c-list-news__link">
+        <span class="c-list-news__date">2020/10/10</span>
+        <p class="c-list-news__text">お知らせタイトルがはいります。お知らせタイトルがはいります。</p>
+      </a>
+    </li>
+    <li class="c-list-news__item">
+      <a href="#" class="c-list-news__link">
+        <span class="c-list-news__date">2020/1/1</span>
+        <p class="c-list-news__text">お知らせタイトルがはいります。お知らせタイトルがはいります。お知らせタイトルがはいります。お知らせタイトルがはいります。お知らせタイトルがはいります。お知らせタイトルがはいります。お知らせタイトルがはいります。お知らせタイトルがはいります。お知らせタイトルがはいります。</p>
+      </a>
+    </li>
+  </ul>
+</div>
+<div style="padding: 20px">
+  <a href="#" class="c-button-icon"><span class="c-button-icon__text c-icon__point">現在地から探す</span></a>
+  <a class="c-button-icon js-modal-trigger" data-modal="modal_top"><span class="c-button-icon__text c-icon__search">地域から探す</span></a>
+  <div id="modal_top" class="js-modal-content">
+    <div class="p-modal-place">
+      <p class="p-modal-place__title">地域をお選びください</p>
+      <ul class="p-modal-place__list">
+        <li class="p-modal-place__content"><a href="#" class="c-button-modal">すべて<span>(38)</span></a></li>
+        <li class="p-modal-place__content"><a href="#" class="c-button-modal">中央区<span>(6)</span></a></li>
+        <li class="p-modal-place__content"><a href="#" class="c-button-modal">港区<span>(2)</span></a></li>
+        <li class="p-modal-place__content"><a href="#" class="c-button-modal">渋谷区<span>(6)</span></a></li>
+        <li class="p-modal-place__content"><a href="#" class="c-button-modal">品川区<span>(2)</span></a></li>
+        <li class="p-modal-place__content"><a href="#" class="c-button-modal">新宿区<span>(6)</span></a></li>
+        <li class="p-modal-place__content"><a href="#" class="c-button-modal">世田谷区<span>(2)</span></a></li>
+        <li class="p-modal-place__content"><a href="#" class="c-button-modal">江東区<span>(6)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px">
+  <a href="#" class="c-button-modal">
+    <p>すべて</p>
+    <span>(38)</span>
+  </a>
+</div>
+<div style="padding: 20px">
+  <a href="#" class="c-button-ticket">
+    整理券発行
+  </a>
+</div>
+<div style="padding: 20px">
+  <a href="#" class="c-button-ticket is-disabled">
+    整理券発行
+  </a>
+</div>
+<div style="background: #cc0000; padding: 20px">
+  <a href="#" class="c-button-ticket--02">
+    WEBから整理券を発行
+  </a>
+</div>
+<div style="padding: 20px">
+  <a href="#" class="c-button-more">
+    もっと見る
+  </a>
+</div>
+<div style="padding: 20px">
+  <a href="#" class="c-button-notice">
+    <img src="/assets/img/btn/btn_sms.png" alt="">
+    <span>SMS</span>
+  </a>
+  <a href="#" class="c-button-notice">
+    <img src="/assets/img/btn/btn_mail.png" alt="">
+    <span>メール</span>
+  </a>
+  <a href="#" class="c-button-notice">
+    <img src="/assets/img/btn/btn_line.png" alt="">
+    <span>LINE</span>
+  </a>
+  <a href="#" class="c-button-notice">
+    <img src="/assets/img/btn/btn_id.png" alt="">
+    <span>SMS</span>
+  </a>
+</div>
+<div style="padding: 20px 25px;">
+  <div class="p-tooltip__wrap">
+    <a class="c-button-info p-tooltip__button js-tooltip-trigger" data-tooltip="tooltip"><img src="/assets/img/icon/icon_info.svg" alt=""></a>
+    <div class="p-tooltip js-tooltip-content" id="tooltip">
+      <p class="p-tooltip__title">混雑レベルについて</p>
+      <ul>
+        <li class="p-explanation__list">
+          <div class="c-status-badge-square--01">
+            <span class="c-status-badge__icon"></span>
+            <span class="c-status-badge__type">空き</span>
+          </div>
+          <div class="p-explanation__content">
+            <p class="p-explanation__name">説明タイトル</p>
+            <p class="p-explanation__text">説明がここに入ります。説明がここに入ります。説明がここに入ります。</p>
+          </div>
+        </li>
+        <li class="p-explanation__list">
+          <div class="c-status-badge-square--02">
+            <span class="c-status-badge__icon"></span>
+            <span class="c-status-badge__type">やや混雑</span>
+          </div>
+          <div class="p-explanation__content">
+            <p class="p-explanation__name">説明タイトル</p>
+            <p class="p-explanation__text">説明がここに入ります。説明がここに入ります。説明がここに入ります。</p>
+          </div>
+        </li>
+        <li class="p-explanation__list">
+          <div class="c-status-badge-square--03">
+            <span class="c-status-badge__icon"></span>
+            <span class="c-status-badge__type">混雑</span>
+          </div>
+          <div class="p-explanation__content">
+            <p class="p-explanation__name">説明タイトル</p>
+            <p class="p-explanation__text">説明がここに入ります。説明がここに入ります。説明がここに入ります。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<ul class="p-sns">
+  <li class="p-sns__item"><a href="#"><img src="/assets/img/icon/icon_facebook.png" width="76" height="77" alt="facebook"></a></li>
+  <li class="p-sns__item"><a href="#"><img src="/assets/img/icon/icon_twitter.png" width="74" height="74" alt="Twitter"></a></li>
+  <li class="p-sns__item"><a href="#"><img src="/assets/img/icon/icon_mail.png" width="74" height="74" alt="mail"></a></li>
+  <li class="p-sns__item"><a href="#"><img src="/assets/img/icon/icon_line.png" width="74" height="74" alt="LINE"></a></li>
+  <li class="p-sns__item"><a href="#"><img src="/assets/img/icon/icon_instagram.png" width="74" height="74" alt="Instagram"></a></li>
+</ul>
+<div style="padding: 20px;">
+  <div class="p-ticket p-ticket-complete">
+    <span class="p-ticket__time">14:36 現在</span>
+    <p class="p-ticket__text">整理券番号</p>
+    <div class="p-ticket__number"><span class="p-ticket__number--red">96</span>番</div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="p-ticket">
+    <p class="p-ticket__text">整理券番号</p>
+    <div class="p-ticket__number"><span class="p-ticket__number--red">96</span>番</div>
+    <div class="p-ticket-now">
+      <span class="p-ticket-now__time">14:36 現在</span>
+      <ul class="p-ticket-now__list">
+        <li class="p-ticket-now__item">
+          <div class="p-ticket-now__text">現在の呼び出し番号</div>
+          <div class="p-ticket-now__number"><span>90</span>番</div>
+        </li>
+        <li class="p-ticket-now__item">
+          <div class="p-ticket-now__text">待ち時間</div>
+          <div class="p-ticket-now__number">約<span class="p-ticket-now__number--l">15</span>分</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="p-ticket">
+    <p class="p-ticket__text">整理券番号</p>
+    <div class="p-ticket__number"><span>96</span>番</div>
+    <div class="p-ticket-now">
+      <span class="p-ticket-now__time">14:36 現在</span>
+      <p class="p-ticket-now__call">
+        あなたの番号が呼び出されました<br>窓口にお越しください
+      </p>
+    </div>
+  </div>
+</div>
+<div style="padding: 20px;">
+  <div class="p-ticket-qr">
+    <img src="/assets/img/ticket/qr.png" alt="">
+  </div>
+</div>
+
+<div class="p-ticket-button-area">
+  <a href="#" class="c-button-ticket--02">
+    WEBから整理券を発行
+  </a>
+</div>
+
+
+
+</div><!-- .l-container -->
+
+<!--#include virtual="/assets/inc/footer.html" -->
+<script src="/assets/js/vendor.js"></script>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>

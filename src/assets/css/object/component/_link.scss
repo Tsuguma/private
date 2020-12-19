@@ -1,0 +1,30 @@
+/* Link
+--------------------------------------------------------------*/
+%link {
+  color: $accent_color;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.c-link {
+  @extend %link;
+
+  &--arrow {
+    @extend %link;
+    padding-left: 1.1em;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 10px;
+      background: url('/assets/img/icon/icon_arrow_01.svg') no-repeat center;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

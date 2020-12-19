@@ -1,0 +1,52 @@
+/* List
+--------------------------------------------------------------*/
+.c-list-news {
+  &__item {
+    border-bottom: 1px solid #eee;
+
+    &:first-child {
+
+      @include pc-screen {
+        border-top: 1px solid #eee;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 15px 0;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+
+    @include pc-screen {
+      display: flex;
+      font-size: 1.5rem;
+      padding: 18px 22px;
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #707070;
+    padding-right: 37px;
+    display: block;
+
+    @include pc-screen {
+      width: 98px;
+    }
+  }
+
+  &__text {
+    @include pc-screen {
+      width: 89%;
+    }
+  }
+}

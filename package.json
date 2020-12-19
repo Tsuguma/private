@@ -1,0 +1,43 @@
+{
+  "name": "yarn-webpack-gulp",
+  "version": "1.0.0",
+  "description": "yarn, webpack, gulpを使用した開発環境",
+  "main": "index.js",
+  "author": "RAZONA OKINAWA",
+  "license": "MIT",
+  "scripts": {
+    "gulp": "gulp --silent"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.5",
+    "del": "^4.1.1",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-ssi": "^0.4.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sass-lint": "^1.4.0",
+    "webpack": "^4.32.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "reset-css": "^4.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

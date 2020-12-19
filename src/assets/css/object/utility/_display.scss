@@ -1,0 +1,12 @@
+/* PC,SP
+--------------------------------------------------------------*/
+@include pc-screen {
+  .u-sp {
+    display: none;
+  }
+}
+@include sp-screen {
+  .u-pc {
+    display: none;
+  }
+}

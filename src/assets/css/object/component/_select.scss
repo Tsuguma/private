@@ -1,0 +1,45 @@
+/* Select
+--------------------------------------------------------------*/
+
+.c-select {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    background: url('/assets/img/icon/icon_arrow_01.svg') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  select {
+    width: 100%;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: ellipsis;
+    border: 0;
+    outline: none;
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+    appearance: none;
+    padding: 13px 46px 13px 16px;
+    color: $font_color;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}

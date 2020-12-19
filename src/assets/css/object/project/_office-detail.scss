@@ -1,0 +1,94 @@
+/* Office Detail
+--------------------------------------------------------------*/
+.p-office-detail-slide {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @include pc-screen {
+    padding-bottom: 34px;
+  }
+}
+
+.p-office-detail-info-area {
+  @include pc-screen {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+}
+
+.p-office-detail-info {
+  @include pc-screen {
+    width: 468px;
+  }
+
+  &__heading {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    overflow: hidden;
+
+    @include sp-screen {
+      text-align: center;
+    }
+
+    @include pc-screen {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+
+    dt {
+      font-weight: bold;
+
+      @include sp-screen {
+        display: none;
+      }
+
+      @include pc-screen {
+        width: 75px;
+        float: left;
+        margin-bottom: 5px;
+      }
+    }
+
+    dd {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__footer {
+    @include sp-screen {
+      text-align: center;
+    }
+
+    @include pc-screen {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 25px;
+    }
+  }
+
+  &__link {
+    @include sp-screen {
+      display: inline-block;
+      margin-top: 24px;
+    }
+  }
+}
+
+.p-office-detail-map {
+  @include pc-screen {
+    width: 500px;
+  }
+
+  @include sp-screen {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-top: 40px;
+  }
+}

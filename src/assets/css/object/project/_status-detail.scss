@@ -1,0 +1,147 @@
+/* Status Detail
+--------------------------------------------------------------*/
+
+.p-status-detail {
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #d6d6d6;
+  overflow: hidden;
+  width: 91.46vw;
+  margin: 0 auto;
+
+  @include pc-screen {
+    width: 866px;
+    margin: 0 18px;
+  }
+
+  &__label {
+    width: 90%;
+    margin: 14px auto;
+
+    @include pc-screen {
+      width: 800px;
+      margin: 24px auto;
+    }
+  }
+
+  &__body {
+    @include pc-screen {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 33px 33px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @include pc-screen {
+      width: 400px;
+    }
+
+    img {
+      vertical-align: middle;
+
+      @include pc-screen {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &__graph {
+    position: relative;
+    padding: 0 4.26vw 24px;
+
+    @include pc-screen {
+      width: 350px;
+      padding: 0;
+    }
+  }
+
+  &__graph-change {
+    width: 39px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 10px;
+    left: 4.2vw;
+    cursor: pointer;
+    z-index: 2;
+
+    @include pc-screen {
+      top: 0;
+      left: 0;
+    }
+
+    [data-graph-type='today'] & {
+      background-image: url('/assets/img/icon/icon_today.svg');
+    }
+
+    [data-graph-type='week'] & {
+      background-image: url('/assets/img/icon/icon_week.svg');
+    }
+  }
+
+  &__img-change {
+    width: 192px;
+    margin: 24px auto;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    background: $accent_color;
+    padding: 2px;
+
+    @include pc-screen {
+      display: none;
+    }
+
+    > a {
+      display: block;
+      width: 50%;
+      border-radius: 4px;
+      background: #f7f7f7;
+      font-size: 1.4rem;
+      line-height: 1;
+      color: #707070;
+      padding: 13px;
+      text-decoration: none;
+
+      &.is-active {
+        background: $accent_color;
+        border-radius: 0;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// JS切り替え用
+.js-slide-detail {
+  &[data-graph-type='today'] {
+    .p-status-detail__graph--week {
+      display: none;
+    }
+  }
+
+  &[data-graph-type='week'] {
+    .p-status-detail__graph--today {
+      display: none;
+    }
+  }
+
+  @include sp-screen {
+    &[data-slide-type='current'] {
+      .p-status-detail__graph {
+        display: none;
+      }
+    }
+
+    &[data-slide-type='forecast'] {
+      .p-status-detail__img {
+        display: none;
+      }
+    }
+  }
+}

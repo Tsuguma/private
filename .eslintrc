@@ -1,0 +1,12 @@
+{
+  "extends": "semistandard",
+  "globals": {
+    "location": true,
+    "history": true,
+    "localStorage": true,
+    "sessionStorage": true,
+    "$": true,
+    "jquery": true,
+    "jQuery": true
+  }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<meta name="format-detection" content="telephone=no">
+<title>整理券発行</title>
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<link rel="icon" href="">
+<link rel="stylesheet" href="/assets/css/vendor.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<!--#include virtual="/assets/inc/header.html"-->
+
+<ol class="l-breadcrumb">
+  <li class="l-breadcrumb__item"><a href="/">トップ</a></li>
+  <li class="l-breadcrumb__item"><a href="/office/detail.html">銀座三郵便局</a></li>
+  <li class="l-breadcrumb__item">整理券発行</li>
+</ol>
+
+<div class="l-page-header">
+  <div class="l-page-header__inner">
+    <h2 class="l-page-header__title">整理券発行</h2>
+  </div>
+  <a href="javascript:void(0)" class="l-page-header__prev"><img src="/assets/img/icon/icon_arrow_03.svg" alt="前へ"></a>
+</div>
+<div class="l-container">
+  <div class="l-content--02">
+    <div class="l-inner p-ticket-issuance">
+      <ol class="p-progress p-ticket-issuance__progress">
+        <li class="p-progress__item is-complete">
+          <p class="p-progress__number"><span>1</span></p>
+          <p class="p-progress__text">窓口選択</p>
+        </li>
+        <li class="p-progress__item is-active">
+          <p class="p-progress__number"><span>2</span></p>
+          <p class="p-progress__text">通知方法選択</p>
+        </li>
+        <li class="p-progress__item">
+          <p class="p-progress__number"><span>3</span></p>
+          <p class="p-progress__text">通知先の入力</p>
+        </li>
+        <li class="p-progress__item">
+          <p class="p-progress__number"><span>4</span></p>
+          <p class="p-progress__text">整理券発行</p>
+        </li>
+      </ol>
+      <div class="p-step">
+        <h3 class="p-step__title">
+          <span class="p-step__title-number">STEP<span>1</span></span>
+          <span class="p-step__title-text">窓口をお選びください。</span>
+        </h3>
+        <ul class="p-select-window">
+          <li class="p-select-window__item">
+            <input type="radio" name="window" id="post" class="p-select-window__input" checked="">
+            <label for="post" class="p-select-window__label">
+              <span class="p-select-window__icon"></span>
+              <span class="p-select-window__text">郵便窓口</span>
+              <span class="p-select-window__wait">
+                <span class="p-select-window__wait-item--people">
+                  <span class="p-select-window__wait-text">待ち人数</span>
+                  <span class="p-select-window__wait-number"><span>12</span>人</span>
+                </span>
+                <span class="p-select-window__wait-item--time">
+                  <span class="p-select-window__wait-text">待ち時間</span>
+                  <span class="p-select-window__wait-number">約<span>20</span>分</span>
+                </span>
+              </span>
+            </label>
+          </li>
+          <li class="p-select-window__item">
+            <input type="radio" name="window" id="saving" class="p-select-window__input">
+            <label for="saving" class="p-select-window__label">
+              <span class="p-select-window__icon"></span>
+              <span class="p-select-window__text">貯金窓口</span>
+              <span class="p-select-window__wait">
+                <span class="p-select-window__wait-item--people">
+                  <span class="p-select-window__wait-text">待ち人数</span>
+                  <span class="p-select-window__wait-number"><span>12</span>人</span>
+                </span>
+                <span class="p-select-window__wait-item--time">
+                  <span class="p-select-window__wait-text">待ち時間</span>
+                  <span class="p-select-window__wait-number">約<span>20</span>分</span>
+                </span>
+              </span>
+            </label>
+          </li>
+          <li class="p-select-window__item">
+            <input type="radio" name="window" id="insurance" class="p-select-window__input">
+            <label for="insurance" class="p-select-window__label">
+              <span class="p-select-window__icon"></span>
+              <span class="p-select-window__text">保険窓口</span>
+              <span class="p-select-window__wait">
+                <span class="p-select-window__wait-item--people">
+                  <span class="p-select-window__wait-text">待ち人数</span>
+                  <span class="p-select-window__wait-number"><span>3</span>人</span>
+                </span>
+                <span class="p-select-window__wait-item--time">
+                  <span class="p-select-window__wait-text">待ち時間</span>
+                  <span class="p-select-window__wait-number">約<span>10</span>分</span>
+                </span>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="p-step">
+        <h3 class="p-step__title">
+          <span class="p-step__title-number">STEP<span>2</span></span>
+          <span class="p-step__title-text">通知方法をお選びください。</span>
+        </h3>
+        <p class="p-step__text">下から通知方法を選んでください。<br>通知先入力画面が表示されますので、通知先を入力して整理券発行ボタンを押してください。</p>
+        <ul class="p-select-notification">
+          <li class="p-select-notification__item js-modal-trigger" data-modal="sms">
+            <img src="/assets/img/button/button_sms.png" alt="SMS">
+            <p class="p-select-notification__text">SMS</p>
+          </li>
+          <li class="p-select-notification__item js-modal-trigger" data-modal="mail">
+            <img src="/assets/img/button/button_mail.png" alt="メール">
+            <p class="p-select-notification__text">メール</p>
+          </li>
+          <li class="p-select-notification__item js-modal-trigger" data-modal="line">
+            <img src="/assets/img/button/button_line.png" alt="LINE">
+            <p class="p-select-notification__text">LINE</p>
+          </li>
+          <li class="p-select-notification__item js-modal-trigger" data-modal="id">
+            <img src="/assets/img/button/button_id.png" alt="ゆうびんID">
+            <p class="p-select-notification__text">ゆうびんID</p>
+          </li>
+        </ul>
+      </div>
+      <div class="js-modal-content" id="sms">
+        <div class="p-step__modal">
+          <form action="complete.html" class="p-step__form js-form">
+            <ol class="p-progress">
+              <li class="p-progress__item is-complete">
+                <p class="p-progress__number"><span>1</span></p>
+                <p class="p-progress__text">窓口選択</p>
+              </li>
+              <li class="p-progress__item is-complete">
+                <p class="p-progress__number"><span>2</span></p>
+                <p class="p-progress__text">通知方法選択</p>
+              </li>
+              <li class="p-progress__item is-active js-form-linked">
+                <p class="p-progress__number"><span>3</span></p>
+                <p class="p-progress__text">通知先の入力</p>
+              </li>
+              <li class="p-progress__item">
+                <p class="p-progress__number"><span>4</span></p>
+                <p class="p-progress__text">整理券発行</p>
+              </li>
+            </ol>
+            <h3 class="p-step__title">
+              <span class="p-step__title-number">STEP<span>3</span></span>
+            </h3>
+            <div class="p-step__form-text-area">
+              <p class="p-step__form-icon--sms"><img src="/assets/img/icon/icon_phone.png" alt=""></p>
+              <p class="p-step__form-text">SMSで通知を送りますので<br>電話番号をご入力ください</p>
+            </div>
+
+            <p class="p-step__form-input"><input type="number" placeholder="08012345678" class="c-input js-form-item"></p>
+            <p class="p-step__form-submit"><button class="c-button-ticket is-disabled js-form-submit">整理券発行</button></p>
+          </form>
+        </div>
+      </div>
+      <div class="js-modal-content" id="mail">
+        <div class="p-step__modal">
+          <form action="complete.html" class="p-step__form js-form">
+            <ol class="p-progress">
+              <li class="p-progress__item is-complete">
+                <p class="p-progress__number"><span>1</span></p>
+                <p class="p-progress__text">窓口選択</p>
+              </li>
+              <li class="p-progress__item is-complete">
+                <p class="p-progress__number"><span>2</span></p>
+                <p class="p-progress__text">通知方法選択</p>
+              </li>
+              <li class="p-progress__item is-active js-form-linked">
+                <p class="p-progress__number"><span>3</span></p>
+                <p class="p-progress__text">通知先の入力</p>
+              </li>
+              <li class="p-progress__item">
+                <p class="p-progress__number"><span>4</span></p>
+                <p class="p-progress__text">整理券発行</p>
+              </li>
+            </ol>
+            <h3 class="p-step__title">
+              <span class="p-step__title-number">STEP<span>3</span></span>
+            </h3>
+            <div class="p-step__form-text-area">
+              <p class="p-step__form-icon--mail"><img src="/assets/img/icon/icon_mail_02.png" alt=""></p>
+              <p class="p-step__form-text">メールで通知を送りますので<br>メールアドレスをご入力ください</p>
+            </div>
+
+            <p class="p-step__form-input"><input type="email" placeholder="example@example.com" class="c-input js-form-item"></p>
+            <p class="p-step__form-submit"><button class="c-button-ticket is-disabled js-form-submit">整理券発行</button></p>
+          </form>
+        </div>
+      </div>
+      <div class="js-modal-content" id="id">
+        <div class="p-step__modal">
+          <form action="complete.html" class="p-step__form js-form">
+            <ol class="p-progress">
+              <li class="p-progress__item is-complete">
+                <p class="p-progress__number"><span>1</span></p>
+                <p class="p-progress__text">窓口選択</p>
+              </li>
+              <li class="p-progress__item is-complete">
+                <p class="p-progress__number"><span>2</span></p>
+                <p class="p-progress__text">通知方法選択</p>
+              </li>
+              <li class="p-progress__item is-active js-form-linked">
+                <p class="p-progress__number"><span>3</span></p>
+                <p class="p-progress__text">通知先の入力</p>
+              </li>
+              <li class="p-progress__item">
+                <p class="p-progress__number"><span>4</span></p>
+                <p class="p-progress__text">整理券発行</p>
+              </li>
+            </ol>
+            <h3 class="p-step__title">
+              <span class="p-step__title-number">STEP<span>3</span></span>
+            </h3>
+            <div class="p-step__form-text-area">
+              <p class="p-step__form-icon--mail"><img src="/assets/img/icon/icon_id.png" alt=""></p>
+              <p class="p-step__form-text">ゆうびんＩＤで通知を送りますので<br>ログインしてください</p>
+            </div>
+
+            <div class="p-step__form-input-col">
+              <div class="p-step__form-input-group">
+                <p class="c-input-label">ゆうびんＩＤ（メールアドレス）</p>
+                <input type="email" placeholder="example@example.com" class="c-input js-form-item">
+              </div>
+              <div class="p-step__form-input-group">
+                <p class="c-input-label">パスワード</p>
+                <input type="password" placeholder="パスワード" class="c-input js-form-item">
+              </div>
+            </div>
+            <p class="p-step__form-submit"><button class="c-button-ticket is-disabled js-form-submit">ログインして整理券発行</button></p>
+          </form>
+
+          <div class="p-step__signup">
+            <p class="p-step__signup-text">ゆうびんＩＤをお持ちでない方</p>
+            <a href="javascript:void(0)" class="p-step__signup-button">新規会員登録</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- .l-container -->
+
+<ul class="p-sns">
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_facebook.png" width="76" height="77" alt="facebook"></a></li>
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_twitter.png" width="74" height="74" alt="Twitter"></a></li>
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_mail.png" width="74" height="74" alt="mail"></a></li>
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_line.png" width="74" height="74" alt="LINE"></a></li>
+  <li class="p-sns__item"><a href="javascript:void(0)"><img src="/assets/img/icon/icon_instagram.png" width="74" height="74" alt="Instagram"></a></li>
+</ul>
+<!--#include virtual="/assets/inc/footer.html" -->
+
+<script src="/assets/js/vendor.js"></script>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>

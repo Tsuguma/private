@@ -1,0 +1,132 @@
+
+/* Footer
+--------------------------------------------------------------*/
+.l-footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  img {
+    vertical-align: middle;
+  }
+
+  &__inner {
+    @include pc-screen {
+      width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__upper {
+    text-align: center;
+    background: #f7f7f7;
+    padding: 13px 0;
+
+    @include pc-screen {
+      padding: 12px 0;
+    }
+  }
+
+  &__logo {
+    &--company {
+      display: inline-block;
+      width: 112px;
+
+      @include pc-screen {
+        width: 94px;
+      }
+    }
+
+    &--group {
+      display: inline-block;
+      width: 151px;
+
+      @include pc-screen {
+        width: 104px;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+
+    > li {
+      &:nth-child(n+2) {
+        margin-left: 25px;
+      }
+    }
+
+    a {
+      font-size: 1.3rem;
+      color: $font_color;
+      padding-left: 16px;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 10px;
+        background: url('/assets/img/icon/icon_arrow_01.svg') no-repeat center;
+        background-size: contain;
+        position: absolute;
+        top: 1px;
+        left: 0;
+      }
+    }
+  }
+
+  &__lower {
+    text-align: center;
+    background: $accent_color;
+    padding: 13px 0;
+
+    @include pc-screen {
+      padding: 6px 0;
+    }
+  }
+
+  &__copy {
+    width: 295px;
+  }
+
+  &__pagetop {
+    display: block;
+    width: 46px;
+    height: 46px;
+    background: rgba(#333, 0.4);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    right: 2.66%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 200;
+
+    &:hover {
+      opacity: $hover_opacity;
+    }
+
+    @include pc-screen {
+      transform: translateY(-100%);
+      right: 50%;
+      margin-right: -500px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      height: 22px;
+      width: 12px;
+      background: url('/assets/img/icon/icon_arrow_02.svg') no-repeat center;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-270deg);
+    }
+  }
+}

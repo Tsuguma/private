@@ -1,0 +1,123 @@
+/* Page Header
+--------------------------------------------------------------*/
+
+%page-header {
+  background: #fff;
+  text-align: center;
+  padding: 0 calc(16px + 8.52%);
+  position: relative;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include pc-screen {
+    height: 60px;
+    width: 1000px;
+    padding: 0 64px;
+    margin: 0 auto 16px;
+  }
+}
+
+%page-header-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.l-page-header {
+  @extend %page-header;
+
+  &--detail {
+    @extend %page-header;
+
+    @include pc-screen {
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    .p-badge-group {
+      @include sp-screen {
+        display: none;
+      }
+    }
+  }
+
+  &__inner {
+    .l-page-header--detail & {
+      @include pc-screen {
+        width: 630px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.6;
+    color: $accent_color;
+
+    @include pc-screen {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-left: 32px;
+
+    @include sp-screen {
+      display: none;
+    }
+  }
+
+  &__help {
+    @extend %page-header-icon;
+    right: 4.26%;
+    z-index: 10;
+
+    @include pc-screen {
+      right: 0;
+    }
+  }
+
+  &__home {
+    @extend %page-header-icon;
+    width: 20px;
+    height: 20px;
+    left: 4.26%;
+
+    @include pc-screen {
+      display: none;
+    }
+  }
+
+  &__menu {
+    @extend %page-header-icon;
+    width: 23px;
+    height: 23px;
+    right: 4.26%;
+
+    @include pc-screen {
+      margin-top: -50px;
+      right: 0;
+    }
+  }
+
+  &__prev {
+    @extend %page-header-icon;
+    width: 11px;
+    height: 16px;
+    left: 4.26%;
+    transform: translateY(-50%) rotate(180deg);
+
+    @include pc-screen {
+      display: none;
+    }
+  }
+}
