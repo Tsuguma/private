@@ -1,12 +1,18 @@
 //mixin
 @mixin sp-screen {
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
 
 @mixin pc-screen {
-  @media screen and (min-width: 751px) {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin pc-wide-screen {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }

@@ -1,0 +1,41 @@
+.p-heading-group {
+  margin: 15px auto 40px;
+
+  @include pc-screen {
+    margin: 10px auto 60px;
+    padding: 0 200px;
+    position: relative;
+    max-width: 1180px;
+  }
+
+  .c-select__wrap {
+    margin: 15px auto;
+
+    @include pc-screen {
+      position: absolute;
+      right: 0;
+      top: 15px;
+      margin: 0;
+    }
+  }
+
+  .c-breadcrumb {
+    margin-top: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 72px;
+      height: 1px;
+      background: #bdbdb5;
+      position: absolute;
+      top: 0;
+      left : 50%;
+      transform: translateX(-50%);
+
+      @include pc-screen {
+        width: 145px;
+      }
+    }
+  }
+}

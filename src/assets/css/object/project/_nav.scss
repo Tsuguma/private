@@ -1,0 +1,227 @@
+/* Nav Related
+--------------------------------------------------------------*/
+.p-nav-related {
+  font-size: 0.9rem;
+  overflow: hidden;
+  width: calc(100% - 2px);
+  position: relative;
+  margin-left: 1px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+
+  @include pc-screen {
+    font-size: 1.4rem;
+    margin-bottom: 120px;
+    margin-top: 120px;
+  }
+
+  &:after,
+  &:before {
+    content: '';
+    width: 8px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    @include pc-screen {
+      width: 15px;
+    }
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include pc-screen {
+      justify-content: space-around;
+      padding: 0 10%;
+    }
+  }
+
+  li {
+    margin: 0 22px 8px;
+    position: relative;
+    @include pc-screen {
+      margin: 0 0 15px;
+      padding: 0 5%;
+    }
+
+    &:before {
+      content: '';
+      width: 100vw;
+      height: calc(100% - 1px);
+      background: #fff;
+      position: absolute;
+      bottom: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    &:after {
+      content: '';
+      width: 100vw;
+      height: 1px;
+      background: #BDBDB5;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  }
+
+  &__link {
+    color: #BDBDB5;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    z-index: 2;
+    padding: 0.5em 0;
+    margin-top: 0.5em;
+    text-decoration: none;
+
+    &:before {
+      content: '';
+      width: 6.5em;
+      height: 1px;
+      background: #000;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      @include pc-screen {
+        width: 8.3em;
+      }
+    }
+
+    &[target="_blank"] {
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: .8em;
+        height: .8em;
+        margin-left: 8px;
+        background: url(/integrated-report/assets/images/icon_target_blank.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        right: -1.2em;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #000;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &--current {
+      @extend .p-nav-related__link;
+      color: #000;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.p-nav-top {
+  position: fixed;
+  left: 30px;
+  top: 240px;
+  z-index: 10;
+
+  &.is-stop {
+    position: absolute;
+    bottom: 85px;
+    top: auto;
+  }
+
+  &__item {
+
+    a {
+      display: block;
+      width: 9px;
+      height: 9px;
+      border: solid 1px #E1E0E1;
+      border-radius: 50%;
+      background: #fff;
+      position: relative;
+
+      &.is-current {
+        pointer-events: none;
+      }
+
+      &.is-current,
+      &:hover {
+        border-color: #000;
+        span {
+          display: block;
+          color: #000;
+        }
+      }
+    }
+
+    &:not(:last-child){
+      a {
+        margin-bottom: 85px;
+        &::after {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 85px;
+          background-color: #e1e0e1;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-51%);
+          top: 8px;
+          pointer-events: none;
+        }
+      }
+    }
+
+    span {
+      font-size: 1.4rem;
+      position: absolute;
+      transform-origin: top left;
+      width: 115px;
+      top: 3px;
+      left: 12px;
+      transform: rotate(90deg) translate(-50%, -100%);
+      line-height: 1.5;
+      padding-bottom: 1em;
+      text-align: center;
+      pointer-events: none;
+      display: none;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 14px;
+        width: 1px;
+        background: #000;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

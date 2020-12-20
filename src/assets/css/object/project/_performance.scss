@@ -1,0 +1,126 @@
+.p-performance {
+  color: #fff;
+
+  &__head {
+    font-size: 1.8rem;
+    font-family: $base_font_serif;
+    text-align: center;
+    padding-bottom: 15px;
+    position: relative;
+
+    @include pc-screen {
+      font-size: 3.6rem;
+      padding-bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 74px;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+
+      @include pc-screen {
+        width: 148px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  &__item {
+    width: 50%;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 30px;
+
+    @include sp-screen {
+      position: relative;
+    }
+
+    @include pc-screen {
+      width: 33.33%;
+      margin-top: 60px;
+      padding: 0 10px;
+    }
+
+    &__name {
+      font-size: 1rem;
+      line-height: 1.33;
+      margin-bottom: 12px;
+
+      @include pc-screen {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__data {
+      font-size: 1.8rem;
+
+      @include pc-screen {
+        font-size: 3.6rem;
+      }
+
+      span {
+        font-size: 4.5rem;
+        font-family: $num_font_sans;
+        padding-right: 5px;
+        line-height: 1;
+
+        @include pc-screen {
+          font-size: 9rem;
+        }
+      }
+    }
+
+    &__graph {
+      position: relative;
+
+      @include sp-screen {
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+      }
+
+      @include pc-screen {
+        width: 280px;
+        height: 280px;
+      }
+
+      .chart {
+        @include sp-screen {
+          width: 95%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -45%);
+        }
+
+        @include pc-screen {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .p-performance__item__group {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

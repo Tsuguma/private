@@ -1,0 +1,108 @@
+.p-chronology {
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+  @include pc-screen {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    padding-bottom: 15px;
+  }
+
+  &__item {
+    display: flex;
+
+    &:last-child {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 26px;
+        height: 4px;
+        border-top: 1px solid #e8eaec;
+        border-bottom: 1px solid #e8eaec;
+        position: absolute;
+        bottom: -10px;
+        left: 45px;
+        transform: rotate(45deg);
+
+        @include pc-screen {
+          width: 36px;
+          height: 6px;
+          bottom: -13px;
+          left: 42px;
+        }
+      }
+    }
+  }
+
+  &__year {
+    width: 55px;
+    display: block;
+  }
+
+  &__text {
+    display: block;
+    flex: 1;
+    padding-left: 40px;
+    border-left: 10px solid #e8eaec;
+    position: relative;
+    padding-bottom: 8px;
+    padding-top: 2px;
+
+    @include pc-screen {
+      padding-left: 86px;
+      border-left-width: 15px;
+    }
+
+    .p-chronology__item:last-child & {
+      padding-bottom: 18px;
+
+      @include pc-screen {
+        padding-bottom: 38px;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 1px;
+      background: #cbcbcb;
+      border-left: 18px solid #000;
+      left: -6px;
+      top: 11px;
+
+      @include pc-screen {
+        width: 38px;
+        border-left-width: 38px;
+      }
+    }
+
+    &::after {
+      .p-chronology__item:last-child & {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 0;
+        border-color: transparent #e8eaec transparent transparent;
+        position: absolute;
+        left: -10px;
+        bottom: -10px;
+
+        @include pc-screen {
+          border-width: 0 15px 15px 0;
+          left: -15px;
+          bottom: -15px;
+        }
+      }
+    }
+  }
+}

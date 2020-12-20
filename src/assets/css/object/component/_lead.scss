@@ -1,0 +1,31 @@
+%lead {
+  font-weight: 700;
+  font-family: $base_font_serif;
+  line-height: 1.75;
+}
+
+.c-lead {
+  @extend %lead;
+  font-size: 1.8rem;
+
+  .en & {
+    line-height: 1.35;
+  }
+
+  @include pc-screen {
+    font-size: 3.6rem;
+  }
+}
+
+.c-lead--sm {
+  @extend %lead;
+  font-size: 1.8rem;
+
+  .en & {
+    line-height: 1.35;
+  }
+
+  @include pc-screen {
+    font-size: 2.4rem;
+  }
+}

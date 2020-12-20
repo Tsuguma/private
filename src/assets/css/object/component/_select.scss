@@ -1,45 +1,74 @@
 /* Select
 --------------------------------------------------------------*/
+.c-select__wrap {
+	position: relative;
+	border-radius: 5px;
+	border: 1px solid #BDBDB5;
+  width: 125px;
+  border-radius: 4px;
+  background-color: #fff;
 
-.c-select {
-  width: 100%;
-  text-align: center;
-  position: relative;
-  border: 1px solid #d6d6d6;
-  border-radius: 5px;
-  background: #fff;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    display: block;
-    width: 6px;
-    height: 10px;
-    background: url('/assets/img/icon/icon_arrow_01.svg') no-repeat center;
-    background-size: contain;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
+  @include pc-screen {
+    width: 180px;
+    border-radius: 7px;
   }
 
-  select {
-    width: 100%;
-    cursor: pointer;
-    text-indent: 0.01px;
-    text-overflow: ellipsis;
-    border: 0;
-    outline: none;
-    background: transparent;
-    background-image: none;
-    box-shadow: none;
-    appearance: none;
-    padding: 13px 46px 13px 16px;
-    color: $font_color;
-
-    &::-ms-expand {
-      display: none;
+  &::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: calc(100% + 2px);
+    background: #000;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-radius: 0 4px 4px 0;
+    @include pc-screen {
+      border-radius: 0 7px 7px 0;
+      width: 30px;
     }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    right: 6px;
+    top: 47%;
+    transform: traslateY(-50%);
+    @include pc-screen {
+      border-width: 6px 7px 0 7px;
+      right: 7px;
+    }
+  }
+}
+
+.c-select {
+  appearance: none;
+  text-overflow: ellipsis;
+  padding-right: 1em;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  font-size: 9px;
+  font-weight: 700;
+  background: transparent;
+  padding: 5px 30px 5px 15px;
+  font-family: $base_font_sans;
+  position: relative;
+  z-index: 1;
+  @include pc-screen {
+    font-size: 1.4rem;
+    padding: 8px 40px 8px 13px;
+  }
+
+  &::-ms-expand {
+    display: none;
   }
 }

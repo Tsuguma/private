@@ -1,52 +1,24 @@
-/* List
---------------------------------------------------------------*/
-.c-list-news {
-  &__item {
-    border-bottom: 1px solid #eee;
+.c-list {
+  font-weight: 700;
 
-    &:first-child {
+  > li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    line-height: 1.75;
+    text-align: left;
 
-      @include pc-screen {
-        border-top: 1px solid #eee;
-      }
+    .en & {
+      line-height: 1.5;
     }
-  }
-
-  &__link {
-    display: block;
-    padding: 15px 0;
-    color: #333;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-bottom: 4px;
 
     @include pc-screen {
-      display: flex;
-      font-size: 1.5rem;
-      padding: 18px 22px;
-      margin-bottom: 0;
+      font-size: 1.6rem;
     }
 
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  &__date {
-    font-size: 1.2rem;
-    font-weight: normal;
-    color: #707070;
-    padding-right: 37px;
-    display: block;
-
-    @include pc-screen {
-      width: 98px;
-    }
-  }
-
-  &__text {
-    @include pc-screen {
-      width: 89%;
+    &::before {
+      content: "●";
+      color: #c8d4d9;
+      padding-right: .5em;
     }
   }
 }

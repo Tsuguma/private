@@ -1,0 +1,146 @@
+.p-link-box__item {
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.p-link-box__head {
+  background: #bdbdb5;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+
+    span {
+      a[target="_blank"] & {
+        &::after {
+          content: "";
+          display: inline-block;
+          width: .8em;
+          height: .8em;
+          margin-left: 8px;
+          background: url(/integrated-report/assets/images/icon_target_blank.png) no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+}
+
+.p-link-box__image {
+  overflow: hidden;
+
+  img {
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: .6s;
+
+    .p-link-box__item a:hover & {
+      transform: scale(1.05);
+      opacity: $hover_opacity;
+    }
+  }
+}
+
+
+// PC: 3col, SP: 1col
+.p-link-box--1 {
+
+  @include pc-screen {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .p-link-box__item {
+    @include pc-screen {
+      width: 32%;
+
+      &:not(:nth-child(3n+1)) {
+        margin-left: 2%;
+      }
+
+      &:nth-child(n+4) {
+        margin-top: 48px;
+      }
+    }
+
+    @include sp-screen {
+      width: 66%;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:nth-child(n+2) {
+        margin-top: 33px;
+      }
+    }
+  }
+
+  .p-link-box__head {
+    padding: 8px 1em;
+
+    @include pc-screen {
+      font-size: 1.4rem;
+      padding: 13px 1em;
+    }
+  }
+}
+
+
+// PC: 3col, SP: 2col
+.p-link-box--2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+
+  @include pc-screen {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1180px;
+  }
+
+  a {
+    box-shadow: 2px 2px 4px #bdbdb5;
+  }
+
+  .p-link-box__item {
+    @include pc-screen {
+      width: 32%;
+
+      &:not(:nth-child(3n+1)) {
+        margin-left: 2%;
+      }
+
+      &:nth-child(n+4) {
+        margin-top: 48px;
+      }
+    }
+
+    @include sp-screen {
+      width: 48.5%;
+
+      &:nth-child(even) {
+        margin-left: 3%;
+      }
+
+      &:nth-child(n+3) {
+        margin-top: 12px;
+      }
+    }
+
+  }
+
+  .p-link-box__head {
+    padding: 4px 1em;
+
+    @include pc-screen {
+      font-size: 1.8rem;
+      padding: 9px 1em;
+    }
+  }
+}

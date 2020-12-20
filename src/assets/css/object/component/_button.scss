@@ -1,256 +1,34 @@
 /* Button
 --------------------------------------------------------------*/
-%button {
-  display: inline-block;
-  background: #fff;
-  color: $accent_color;
-  font-size: 1.6rem;
-  font-weight: bold;
-  position: relative;
-  text-align: center;
-  border-radius: 6px;
-  border: 0;
+%c-button {
   cursor: pointer;
-
-  &:hover {
-    text-decoration: none;
-  }
+  border: none;
+  outline: none;
+  appearance: none;
+  font-family: $base_font_sans;
+  background-color: none;
 }
 
-.c-button {
-  @extend %button;
-  border: 1px solid $accent_color;
-}
-
-.c-button-icon {
-  @extend %button;
-  padding: 80px 4vw 25px;
-  border: 1px solid $accent_color;
-  width: 47.5%;
-  font-size: 1.4rem;
-  color: #000;
-
-  @include pc-screen {
-    padding: 42px 110px 42px 140px;
-    font-size: 2rem;
-    border-width: 2px;
-  }
-
-  & + & {
-    margin-left: 3.5%;
-
-    @include pc-screen {
-      margin-left: 32px;
-    }
-  }
-
-  &__text {
-    position: relative;
-    display: inline-block;
-    padding-right: 16px;
-
-    @include pc-screen {
-      display: block;
-    }
-
-    &::before {
-      position: absolute;
-      top: -12vw;
-      left: 50%;
-      transform: translate(-50%, 0);
-
-      @include pc-screen {
-        top: 50%;
-        left: -30px;
-        transform: translate(0, -50%);
-      }
-    }
-
-    &::after {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 10px;
-      background: url('/assets/img/icon/icon_arrow_01.svg') no-repeat center;
-      background-size: contain;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-
-      @include pc-screen {
-        width: 10px;
-        height: 15px;
-      }
-    }
-  }
-}
-
-.c-button-modal {
-  @extend %button;
-  width: 100%;
-  border: 1px solid #c00;
-  color: #333;
-  text-align: left;
-  padding: 4vw 4.8vw;
-
-  @include pc-screen {
-    width: 100%;
-    padding: 14px 16px;
-  }
-
-  > span {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 4.8vw;
-
-    @include pc-screen {
-      right: 16px;
-    }
-  }
-
-  >p {
-    width: 17.0666vw;
-
-    @include pc-screen {
-      width: 102px;
-    }
-  }
-}
-
-.c-button-ticket {
-  @extend %button;
-  background: $accent_color;
-  color: #fff;
-  min-width: 70vw;
-  padding: 3.73333vw 6vw;
-
-
-  @include pc-screen {
-    padding: 14px 30px;
-    min-width: 263px;
-  }
-
-  &.is-disabled {
-    background: #dae5ed;
-    cursor: default;
-  }
-
-  &:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-}
-
-.c-button-ticket--02 {
-  @extend %button;
-  background: #fff;
-  color: $accent_color;
-  min-width: 70vw;
-  padding: 3.2vw 6vw;
-
-  &:hover {
-    color: $accent_color;
-  }
-
-  @include pc-screen {
-    padding: 12px 30px;
-    min-width: 263px;
-  }
-}
-
-.c-button-more {
-  @extend %button;
-  background: $accent_color;
-  color: #fff;
-  font-size: 1.4rem;
-  min-width: 70vw;
-  padding: 3.73333vw 6vw;
-  position: relative;
-
-  @include pc-screen {
-    padding: 14px 30px;
-    min-width: 263px;
-    font-size: 1.6rem;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translate(50%);
-    right: 12%;
-  }
-
-  &::after {
-    content: '';
-    display: block;
-    width: 2px;
-    height: 12px;
-    background: #fff;
-    position: absolute;
-    top: 40%;
-    transform: translate(50%);
-    right: 12%;
-  }
-
-  &:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-}
-
-.c-button-notice {
+.c-button--primary {
+  @extend %c-button;
+  padding: 5px 8px 4px;
   text-align: center;
+  background-color: #e90000;
+  color: #fff;
+  font-size: 1rem;
   display: inline-block;
-  width: 18.13333vw;
-
+  width: 105px;
+  letter-spacing: 0.2em;
   @include pc-screen {
-    width: 68px;
-  }
-
-  &:not(:nth-child(1)) {
-    margin-left: 3.4666vw;
-    @include pc-screen {
-      margin-left: 24px;
-    }
+    font-size: $base_font_size_pc;
+    width: 210px;
+    padding: 14px 12px;
+    letter-spacing: 0.3em;
   }
 
   &:hover {
+    color: #fff;
     text-decoration: none;
-  }
-
-  img {
-    display: block;
-    margin-bottom: 6%;
-    @include pc-screen {
-      margin-bottom: 8px;
-    }
-  }
-
-  span {
-    display: block;
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-}
-
-.c-button-info {
-  display: block;
-  width: 5.3333vw;
-
-  @include pc-screen {
-    width: 24px;
-  }
-
-  > img {
-    width: 100%;
-    height: auto;
+    opacity: $hover_opacity;
   }
 }

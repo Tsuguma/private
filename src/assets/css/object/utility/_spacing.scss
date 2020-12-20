@@ -1,2 +1,38 @@
-/* Spacing
---------------------------------------------------------------*/
+@for $i from 1 through 200 {
+  $sp_size: #{$i}px;
+  $pc_size: #{$i * 2}px;
+
+  .u-mt-#{$i} {
+    margin-top: $sp_size;
+
+    @include pc-screen {
+      margin-top: $pc_size;
+    }
+  }
+
+  .u-mb-#{$i} {
+    margin-bottom: $sp_size;
+
+    @include pc-screen {
+      margin-bottom: $pc_size;
+    }
+  }
+
+  .u-pt-#{$i} {
+    padding-top: $sp_size;
+
+    @include pc-screen {
+      padding-top: $pc_size;
+    }
+  }
+
+  .u-pb-#{$i} {
+    padding-bottom: $sp_size;
+
+    @include pc-screen {
+      padding-bottom: $pc_size;
+    }
+  }
+
+
+}

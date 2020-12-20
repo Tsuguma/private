@@ -1,0 +1,70 @@
+.p-site-title {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 46px;
+    background: #000;
+    position: absolute;
+    left: 50%;
+    top: 108px;
+
+    @include pc-screen {
+      height: 80px;
+      top: 122px;
+    }
+  }
+
+  &__item {
+    font-family: $en_font_sans;
+    background: #f3f3f1;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    letter-spacing: .1em;
+
+    @include pc-screen {
+      height: 165px;
+      font-size: 1.6rem;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 167px;
+      height: 204px;
+      background: url(/integrated-report/assets/images/logo_company_symbol_black.svg) no-repeat center top;
+      background-size: 100% auto;
+      position: absolute;
+      right: -64px;
+      top: -30px;
+
+      @include pc-screen {
+        width: 380px;
+        height: 464px;
+        top: -80px;
+        right: 50%;
+        margin-right: -570px;
+      }
+    }
+  }
+
+  .c-update-date {
+    margin-top: 5px;
+    text-align: right;
+    padding-right: 1.8%;
+
+    @include pc-screen {
+      max-width: 1180px;
+      margin: 5px auto 0;
+      padding-right: 10px;
+    }
+  }
+}

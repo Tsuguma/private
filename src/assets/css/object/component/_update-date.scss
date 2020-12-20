@@ -1,0 +1,8 @@
+.c-update-date {
+  font-size: 1rem;
+  color: #797979;
+
+  @include pc-screen {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,19 @@
+/* Hero
+--------------------------------------------------------------*/
+.c-hero {
+  img {
+    vertical-align: bottom;
+  }
+
+  @include sp-screen {
+    min-width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+  }
+
+  @include pc-screen {
+    margin-bottom: 60px;
+  }
+}

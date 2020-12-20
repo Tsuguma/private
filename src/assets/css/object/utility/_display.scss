@@ -1,12 +1,27 @@
-/* PC,SP
+/* Display
 --------------------------------------------------------------*/
-@include pc-screen {
-  .u-sp {
+.u-display {
+  &--b {
+    display: block;
+  }
+
+  &--i {
+    display: inline;
+  }
+
+  &--ib {
+    display: inline-block;
+  }
+}
+
+.u-sp {
+  @include pc-screen {
     display: none;
   }
 }
-@include sp-screen {
-  .u-pc {
+
+.u-pc {
+  @include sp-screen {
     display: none;
   }
 }

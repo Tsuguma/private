@@ -1,0 +1,55 @@
+/* Banner
+--------------------------------------------------------------*/
+.c-banner-list__wrap {
+  margin-top: 30px;
+  @include pc-screen {
+    margin-top: 60px;
+  }
+}
+
+.c-banner-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: calc(50% - 5px);
+    box-shadow: 4px 4px 7px 0px rgba(101,93,51,0.5);
+    @include pc-screen {
+      width: calc(25% - 15px);
+      box-shadow: 6px 6px 8px rgba(101, 93, 51, 0.5);
+      &:not(:nth-child(4n)) {
+        margin-right: 20px;
+      }
+      &:nth-child(n+5) {
+        margin-top: 20px;
+      }
+    }
+
+    @include sp-screen {
+      &:nth-child(odd) {
+        margin-right: 10px;
+      }
+      &:nth-child(n+3) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    &:hover {
+      opacity: $hover_opacity;
+    }
+  }
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.c-banner {
+  display: block;
+  &:hover {
+    opacity: $hover_opacity;
+  }
+}

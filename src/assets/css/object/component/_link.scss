@@ -1,30 +1,72 @@
 /* Link
 --------------------------------------------------------------*/
-%link {
-  color: $accent_color;
-  font-size: inherit;
-  text-decoration: none;
+.c-link__wrap {
+  text-align: center;
 }
 
 .c-link {
-  @extend %link;
+  color: $font_color;
+}
 
-  &--arrow {
-    @extend %link;
-    padding-left: 1.1em;
-    position: relative;
+.c-link--arrow {
+  @extend .c-link;
 
-    &::before {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 10px;
-      background: url('/assets/img/icon/icon_arrow_01.svg') no-repeat center;
-      background-size: contain;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+  &::after {
+    content: ">";
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.c-link--arrow--2 {
+  @extend .c-link;
+
+  &::before {
+    content: ">";
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  a[target="_blank"] {
+
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: .8em;
+      height: .8em;
+      margin-left: 5px;
+      background: url(/integrated-report/assets/images/icon_target_blank.png) no-repeat;
+      background-size: 100%;
     }
+  }
+}
+
+.c-link--download {
+  @extend .c-link;
+
+  &:hover {
+    &::after {
+      opacity: $hover_opacity;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: .8em;
+    height: .96em;
+    margin-left: 5px;
+    background: url(/integrated-report/assets/images/icon_download_black.svg) no-repeat;
+    background-size: 100%;
+  }
+
+  &__file {
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 0 4px;
+    border: 1px solid #ddd;
   }
 }

@@ -1,22 +1,22 @@
-$base_background: #fff;
-$base_font: '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
-$base_width: 1200px;
-$base_font_size_pc: 1.5rem;
+$base_font_sans: 'Noto Sans JP', '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+$base_font_serif: 'Hiragino Mincho ProN', 'ヒラギノ明朝 ProN', '游明朝', YuMincho, 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+$en_font_sans: 'Josefin Sans', sans-serif;
+$num_font_sans: 'Roboto Condensed', sans-serif;
+
+$base_font_size_pc: 1.4rem;
 $base_font_size_sp: 1.4rem;
-$base_line_height_pc: 1.5;
+$base_line_height_pc: 1.75;
 $base_line_height_sp: 1.7;
 
-$font_noto: 'Noto Sans JP', sans-serif;
-$font_color: #333;
-$link_color: #c00;
-$link_color_hover: #c00;
-$accent_color: #c00;
+$font_color: #000;
+$link_color: #000;
+$link_color_hover: #989898;
 $hover_opacity: 0.7;
 
-//z-index 上＜下
-//z-index: z(hoge);
-$z_map: (
-  hoge1,
-  hoge2,
-  hoge3
-);
+$bg_color_1: #a7b7c1;
+$bg_color_2: #e5e5e2;
+
+$header_height_pc: 80px;
+$header_height_sp: 60px;
+
+$fa-font-path: "../webfonts" !default;

@@ -1,78 +1,29 @@
-/* reset
---------------------------------------------------------------*/
-::-webkit-input-placeholder {
-  color: inherit;
-}
-
-:-moz-placeholder {
-  color: inherit;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-input[type='submit'],
-input[type='button'] {
-  border-radius: 0;
-  appearance: button;
-
-  &::-webkit-search-decoration {
-    display: none;
-  }
-
-  &:focus {
-    outline-offset: -2px;
-  }
-}
-
-sup {
-  vertical-align: super;
-  font-size: smaller;
-}
-
-sub {
-  vertical-align: sub;
-  font-size: smaller;
-}
-
-/* Base
---------------------------------------------------------------*/
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
 html {
-  height: 100%;
   font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
+  background: #fff;
+  font-family: $base_font_sans;
+  color: $font_color;
+  font-feature-settings: 'palt';
+  font-weight: 300;
   position: relative;
-  background: $base_background;
-  font-family: $base_font;
   font-size: $base_font_size_sp;
   line-height: $base_line_height_sp;
-  color: $font_color;
-  min-width: 0;
 
   @include pc-screen {
-    min-width: $base_width;
     font-size: $base_font_size_pc;
     line-height: $base_line_height_pc;
+    min-width: 1200px;
   }
-}
 
+}
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   ::i-block-chrome,
   body {
@@ -81,24 +32,20 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
-@include sp-screen {
-  img {
-    width: 100%;
-  }
-}
-
-/* Link
---------------------------------------------------------------*/
 a {
   color: $link_color;
   text-decoration: none;
+  word-break: break-all;
+
+  .en & {
+    word-break: break-word;
+  }
 
   &:hover {
-    text-decoration: underline;
     color: $link_color_hover;
   }
 
@@ -109,16 +56,24 @@ a {
       text-decoration: none;
     }
   }
+
+  &[href^='tel:'] {
+    @include pc-screen {
+      pointer-events: none;
+    }
+  }
 }
 
-/* テキスト選択
---------------------------------------------------------------*/
+i {
+  font-style: italic;
+}
+
 ::selection {
   color: #fff;
-  background: $accent_color;
+  background: #000;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: $accent_color;
+  background: #000;
 }

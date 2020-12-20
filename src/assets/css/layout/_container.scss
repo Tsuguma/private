@@ -1,44 +1,105 @@
-/* Container
---------------------------------------------------------------*/
 .l-container {
-  @include sp-screen {
-    overflow-x: hidden;
+  width: 100%;
+  overflow: hidden;
+}
+
+.u-bg-2 {
+  .c-heading-3,
+  .c-heading-3--sans {
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 
 .l-content {
-  &--01 {
-    width: 100%;
-    background: #fff;
+  width: 100%;
+  padding: 30px 0 60px;
 
-    &:last-child {
-      margin-bottom: 30px;
+  @include pc-screen {
+    padding: 60px 0 80px;
+    width: 1180px;
+    margin: 0 auto;
+  }
 
-      @include pc-screen {
-        margin-bottom: 60px;
+  &--pc-wide {
+    @extend .l-content;
+
+    @include pc-screen {
+      width: 100%;
+    }
+  }
+
+  &--line {
+    @extend .l-content;
+    padding-top: 0;
+
+    @include pc-screen {
+      border-left: 1px solid #c8c8c1;
+      border-right: 1px solid #c8c8c1;
+      position: relative;
+      padding-top: 1px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 100vw;
+        min-width: 1200px;
+        height: 1px;
+        background: #c8c8c1;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 75px;
       }
     }
   }
 
-  &--02 {
-    width: 100%;
-    background: #f7f7f7;
-
-    &:last-child {
-      border-bottom: 1px solid #d6d6d6;
+  & + .l-content--line {
+    &::before {
+      display: none;
     }
   }
 }
 
-.l-inner {
-  padding-left: 4.26%;
-  padding-right: 4.26%;
+.p-heading-group {
+  & + .l-content {
+    padding-top: 0;
+  }
+}
 
-  @include pc-screen {
-    padding-left: 0;
-    padding-right: 0;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+.l-inner {
+  width: 100%;
+
+  @include sp-screen {
+    padding: 0 10%;
+  }
+
+  &--sp-wide {
+    @extend .l-inner;
+    margin-top: 80px;
+
+    @include sp-screen {
+      padding: 0;
+      margin-top: 40px;
+    }
+  }
+
+  .l-content--pc-wide & {
+    @include pc-screen {
+      width: 1180px;
+      margin: 0 auto;
+    }
+  }
+
+  .l-content--line & {
+    @include pc-screen {
+      width: calc(100% + 2px);
+      margin-left: -1px;
+      margin-right: -1px;
+      position: relative ;
+      z-index: 1;
+      padding: 0;
+    }
   }
 }

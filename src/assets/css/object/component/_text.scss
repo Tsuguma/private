@@ -1,0 +1,38 @@
+.c-text {
+  & + .c-text,
+  & + .c-link--arrow--2 {
+    margin-top: 15px;
+
+    @include pc-screen {
+      margin-top: 20px;
+    }
+  }
+
+  a[target="_blank"] {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: .8em;
+      height: .8em;
+      margin-right: 2px;
+      background: url(/integrated-report/assets/images/icon_target_blank.png) no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+.c-text--m {
+  @extend .c-text;
+  font-size: 1.6rem;
+
+  @include pc-screen {
+    font-size: 1.7rem;
+  }
+}
